@@ -4,6 +4,7 @@ import {BsCalendarCheck} from 'react-icons/bs';
 import '../../styles/main.scss';
 import { Link } from "react-router-dom";
 import Counter from "../../components/counter";
+import HomeParallax from "../../components/homeparallax";
 
 function Home(){
     return(
@@ -65,6 +66,7 @@ function Home(){
                     </p>
                 </div>
             </section>
+            <section><HomeParallax /></section>
 
         </div>
     )
