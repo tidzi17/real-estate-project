@@ -50,7 +50,22 @@ function Home(){
                 </Link>
             </div>
             </section>
-            <Counter />
+            <section><Counter /></section>
+            <section className="overview-container">
+                <div className="overview-item" id="image"></div>
+                <div className="overview-item" id="text-block">
+                <h3>Overview</h3>
+                    <h2>Harmony Residence</h2>
+                    <p>Harmony Residence is an upscale apartment complex nestled in the vibrant 
+                    heart of Miami. Developed by a visionary team at Harmony Developments and 
+                    thoughtfully designed by the renowned architect, Luke Dave, Harmony Residence
+                    boasts a total of 500 meticulously crafted apartments and penthouses. With a 
+                    commitment to providing an exceptional living experience, Harmony Residence
+                    offers an array of top-notch amenities and luxury services available 24/7.
+                    </p>
+                </div>
+            </section>
+
         </div>
     )
 }
