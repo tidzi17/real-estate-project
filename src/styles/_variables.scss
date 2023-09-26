@@ -6,5 +6,22 @@ $font-styles: (
     font-size: 6.8vw,
     color: #FFFFFF,
     font-family: 'Cormorant SC'
+    ),
+    h2: (
+    font-size: 3.3vw,
+    color: #443A2C,
+    font-family: 'Inria Serif'
+  ),
+  h3: (
+    font-size: 2vw,
+    color: #DCBB65,
+    font-weight: 300,
+    font-family: 'Inria Serif' 
+  ),
+  p: (
+    font-size: 1.4vw,
+    color: #4B4545,
+    font-family: 'Gudea', 
     )
 );
+

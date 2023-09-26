@@ -1,8 +1,14 @@
 @mixin font-style($style) {
-    $style-map: map-get($font-styles, $style);
-    font-size: map-get($style-map, font-size);
-    color: map-get($style-map, color);
-    font-family: map-get($style-map, font-family);
-    font-weight: map-get($style-map, font-weight );
-    text-transform: map-get($style-map, text-transform);
+  $style-map: map-get($font-styles, $style);
+  font-size: map-get($style-map, font-size);
+  color: map-get($style-map, color);
+  font-family: map-get($style-map, font-family);
+  font-weight: map-get($style-map, font-weight );
+  text-transform: map-get($style-map, text-transform);
+}
+
+  @mixin bg-rules{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center ;
   }
