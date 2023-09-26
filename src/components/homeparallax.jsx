@@ -7,7 +7,7 @@ function HomeParallax() {
     return (
       <Parallax className="parallax-container"
         bgImage={image} // Replace with your image URL
-        strength={400}
+        strength={300}
       >
         <div>
           <h2>Request A Tour</h2>
