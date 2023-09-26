@@ -3,6 +3,7 @@ import {ImHome} from 'react-icons/im';
 import {BsCalendarCheck} from 'react-icons/bs';
 import '../../styles/main.scss';
 import { Link } from "react-router-dom";
+import Counter from "../../components/counter";
 
 function Home(){
     return(
@@ -49,6 +50,7 @@ function Home(){
                 </Link>
             </div>
             </section>
+            <Counter />
         </div>
     )
 }
