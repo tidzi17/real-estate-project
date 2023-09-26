@@ -5,6 +5,7 @@ import '../../styles/main.scss';
 import { Link } from "react-router-dom";
 import Counter from "../../components/counter";
 import HomeParallax from "../../components/homeparallax";
+import Form from "../../components/contact-form";
 
 function Home(){
     return(
@@ -67,6 +68,7 @@ function Home(){
                 </div>
             </section>
             <section><HomeParallax /></section>
+            <section><Form /></section>
 
         </div>
     )
