@@ -152,7 +152,7 @@
             }
             p{
                 margin-top: -4%;
-                width: 100%;
+               
             }
         }
         .intro-container-links{
@@ -223,14 +223,15 @@
 RESPONSIVE */
 @media only screen and (max-width: 767px) {
     .home-container{
+        width: 100%;
     .heading{
         width: 100%;
         p{
-            font-size: 15.8vw;
+            font-size: 8.8vw;
         }
 
         .heading-text{
-          
+            
             .top-items{
                 p{
                     font-size: 4vw;

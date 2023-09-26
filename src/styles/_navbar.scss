@@ -133,11 +133,13 @@
             background-color: rgb(240, 240, 240);
             color: rgb(49, 40, 10);
             font-weight: 500;
+            position: absolute;
             p{
                 display: none;
             }
             .nav-item{
                 padding: 5%;
+                gap: 0;
             }
         }
       }
