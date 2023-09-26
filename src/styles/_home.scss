@@ -222,6 +222,7 @@
 /* 
 RESPONSIVE */
 @media only screen and (max-width: 767px) {
+    .home{
     .home-container{
         width: 100%;
     .heading{
@@ -244,5 +245,51 @@ RESPONSIVE */
             }
         }
     }
+}
+.intro-container{
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 0;
+    width: 95vw;
+    height: 90vh;
+ /*    border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .intro-container-text{
+        width: 100%;
+        height: 20%;
+        margin-top: -20%;
+        padding: 0;
+      /*   border: 1px solid red; */
+        text-align: center;
+       h3{
+        font-size: 5vw;
+       }
+       h2{
+        font-size: 6vw;
+       }
+       p{
+        font-size: 3vw;
+       }
+    }
+    .intro-container-links{
+        width: 100%;
+        margin-top: 5%;
+       /*  border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+        .intro-item{
+            width: 100%;
+            height: 30%;
+            h3{
+                margin-top: 0;
+            }
+        }
+    }
+}
 }
 }
