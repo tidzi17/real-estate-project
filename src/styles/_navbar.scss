@@ -124,7 +124,7 @@
         }
         .nav-box{
             width: 100vw;
-            height: 100vh;
+            height: fit-content;
             gap: 0;
             display: flex;
             flex-direction: column;
@@ -133,7 +133,7 @@
             background-color: rgb(240, 240, 240);
             color: rgb(49, 40, 10);
             font-weight: 500;
-            position: absolute;
+            
             p{
                 display: none;
             }
