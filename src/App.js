@@ -8,11 +8,13 @@ import Neighbourhood from './pages/neighbourhood-page';
 import Amenities from './pages/amenities-page';
 import Contact from './pages/contact-page';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 import './App.scss';
 
 function App() {
   return (
     <Router>
+      <div className='wrapper'>
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
@@ -23,6 +25,8 @@ function App() {
         <Route path="/amenities" element={<Amenities />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
+      </div>
     </Router>
   );
 }

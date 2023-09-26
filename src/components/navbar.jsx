@@ -12,7 +12,14 @@ function Navbar(){
 
     return(
         <header className="navigation-container">
+             <div className="mobile-logo">
+                    <img src={logo} alt="logo" className="mobile-logo"/>
+                </div>
+                <button className="mobile-menu-icon" onClick={() => setMobile(!Mobile)}>
+                {Mobile ? <ImCross /> : <FaBars />}
+                </button>
             <nav className="navbar">
+           
                 <ul className={Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
                     <div className="nav-box" id="nav-box-first">
                 <li className="nav-item" onClick={() => navigate("/")}>Home</li>
@@ -30,9 +37,8 @@ function Navbar(){
                 <p className="nav-nub">+785 354 487</p>
                 </div>
                 </ul>
-                <button className="mobile-menu-icon" onClick={() => setMobile(!Mobile)}>
-                {Mobile ? <ImCross /> : <FaBars />}
-                </button>
+              
+             
             </nav>
         </header>
     );
