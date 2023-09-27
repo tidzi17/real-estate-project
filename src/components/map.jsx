@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -8,21 +8,6 @@ import '../styles/main.scss';
 
 
 const Map = () => {
-    const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Check the screen width and set isMobile accordingly
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
-    };
-
-    handleResize(); // Initial check
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
 const CustomIcon = () => {
     return (
@@ -43,7 +28,6 @@ const CustomIcon = () => {
         <MapContainer
           center={[25.7617, -80.1918]} // Miami coordinates
           zoom={12}
-          className={`map-cont ${isMobile ? 'mobile-map' : ''}`}
           style={{
             height: '100%',
             width: '100%'
