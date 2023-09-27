@@ -9,6 +9,10 @@ import Form from "../../components/contact-form";
 import Map from "../../components/map";
 
 function Home(){
+    const handleScroll = () => {
+        const section = document.getElementById('intro');
+        section.scrollIntoView({ behavior: 'smooth' });
+      };
     return(
         <div className="home" id="home">
             <div className="home-container">
@@ -22,14 +26,14 @@ function Home(){
                     </div>
                 Inovative Living Spaces</p>
             </div>
-            <div class='scrolldown'>
+            <div class='scrolldown' onClick={handleScroll}>
                 <div class="chevrons">
                <div class='chevrondown'></div>
               <div class='chevrondown'></div>
                 </div>
               </div>
             </div>
-            <section className="intro-container">
+            <section className="intro-container" id="intro">
             <div class="intro-container-text">
                 <h3>The building</h3>
                 <h2>Elevate your living experience</h2>
