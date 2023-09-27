@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import {TfiLocationPin} from 'react-icons/tfi';
 import ReactDOMServer from 'react-dom/server';
 import '../styles/main.scss';
+
+
+const Map = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check the screen width and set isMobile accordingly
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
 const CustomIcon = () => {
     return (
@@ -13,8 +31,6 @@ const CustomIcon = () => {
       </div>
     );
   };
-
-const Map = () => {
     const customIcon = new L.divIcon({
       html: ReactDOMServer.renderToString(<CustomIcon />),
       iconSize: [0, 0],
@@ -23,11 +39,15 @@ const Map = () => {
     });
   
     return (
-      <div className="map">
+      <div  className="map">
         <MapContainer
           center={[25.7617, -80.1918]} // Miami coordinates
           zoom={12}
-          style={{ width: '100%', height: '58vh' }}
+          className={`map-cont ${isMobile ? 'mobile-map' : ''}`}
+          style={{
+            height: isMobile ? '24vh' : '58vh',
+            width: '100%'
+          }}
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
