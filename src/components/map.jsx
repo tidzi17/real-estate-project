@@ -45,7 +45,7 @@ const CustomIcon = () => {
           zoom={12}
           className={`map-cont ${isMobile ? 'mobile-map' : ''}`}
           style={{
-            height: isMobile ? '24vh' : '58vh',
+            height: '100%',
             width: '100%'
           }}
         >

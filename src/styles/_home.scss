@@ -395,13 +395,16 @@ RESPONSIVE */
  }
  .map-container{
     width: 100%;
-    height: 30vh;
+    height: 33vh;
     margin: 5% auto;
     .map-headings{
         width: 100%;
         h3{
             margin-top: -3%;
             font-size: 2.5vw;
+        }
+        h2{
+            font-size: 4vw;
         }
     }
    
