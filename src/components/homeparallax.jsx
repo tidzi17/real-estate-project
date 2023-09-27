@@ -6,7 +6,7 @@ import '../styles/main.scss';
 function HomeParallax() {
     return (
       <Parallax className="parallax-container"
-        bgImage={image} // Replace with your image URL
+        bgImage={image} 
         strength={300}
       >
         <div>

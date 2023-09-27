@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Counter from "../../components/counter";
 import HomeParallax from "../../components/homeparallax";
 import Form from "../../components/contact-form";
+import Map from "../../components/map";
 
 function Home(){
     return(
@@ -69,6 +70,13 @@ function Home(){
             </section>
             <section><HomeParallax /></section>
             <section><Form /></section>
+            <section className="map-container">
+                <div className="map-headings">
+                <h2>Prime Urban Haven</h2>
+                <h3>A dream location packed with potential</h3>
+                </div>
+                <Map />
+            </section>
 
         </div>
     )
