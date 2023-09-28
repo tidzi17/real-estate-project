@@ -5,9 +5,9 @@ function Amenities(){
     return(
         <div className="amenities" id="amenities">
             <div className="landing-container">
-                {/* <div className="heading"> */}
+                <div className="heading">
                 <h1>Amenities</h1>
-                {/* </div> */}
+                </div>
             </div>
             <section>
                 something
