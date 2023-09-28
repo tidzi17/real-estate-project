@@ -4,10 +4,8 @@
 .apartments{
     .landing-container{
         background-image: url(../assets/landings/apartments-landing.jpg);
-        .heading{
-            h1{
-                @include font-style('heading');
-            }
+        h1{
+            @include font-style('heading');
         }
        
     }

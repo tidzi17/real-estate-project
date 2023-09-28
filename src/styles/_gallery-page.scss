@@ -4,10 +4,8 @@
 .gallery-page{
     .landing-container{
         background-image: url(../assets/landings/gallery-landing.jpeg);
-        .heading{
             h1{
                 @include font-style('heading');
             }
-        }
     }
 }
