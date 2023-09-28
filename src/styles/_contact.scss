@@ -68,7 +68,7 @@
             height: 60vh;
             display: flex;
             flex-direction: column;
-            margin: 0 auto;
+            margin: 5% auto;
             .container-item{
                 height: 50%;
                 align-items: center;
@@ -100,8 +100,8 @@
                 }
                 .socials{
                     height: fit-content;
-                    margin-top: 1vh;
-                    width: 45%;
+                    margin-top: 2vh;
+                    width: 100%;
                     .icon{
                         font-size: 2.5vw;
                         /* margin-right: 2%;
