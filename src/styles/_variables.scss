@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Fauna+One&family=Gudea&family=Heebo&family=Inria+Serif&family=Inter:wght@300;400&family=Khula:wght@300&family=Lancelot&family=Nanum+Myeongjo&family=Raleway:wght@300&display=swap');
+:root {
+  --heading-font-size-desktop: 6.8vw;
+  --heading-font-size-mobile: 24px; // Define a mobile fallback size
+}
 
 $font-styles: (
 
@@ -25,6 +29,8 @@ $font-styles: (
     font-family: 'Gudea', 
     )
 );
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 992px;
 
 /* $icon-box-bg: #998663;
 $second-bg: #f5ece0;
@@ -32,3 +38,4 @@ $overview-line-bg: #9D7957;
 $contactus-bg: #212121;
 $contactus-prim: #967647; */
 $primary: #DCBB65;
+

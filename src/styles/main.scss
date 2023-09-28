@@ -16,6 +16,11 @@
 .landing-container{
   @include langing-page-rules;
 }
+@media only screen and (max-width: 767px){
+  .landing-container{
+    margin-top: -12vh;
+  }
+}
 
 ::-webkit-scrollbar {
     width: 10px; 
