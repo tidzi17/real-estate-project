@@ -1,0 +1,66 @@
+@import 'variables';
+@import 'mixins';
+
+.contact{
+    .landing-container{
+    background-image: url(../assets/landings/contact-landing.jpg);
+        h1{
+            @include font-style('heading');
+        }
+    
+    }
+    .contact-info-container{
+        width: 80%;
+        height: 80vh;
+        margin: 10% auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        .container-item{
+            width: 50%;
+            height: 100%;
+        }
+        #info{
+            display: flex;
+            flex-direction: column;
+            .text-block{
+                width: 100%;
+                height: 60%;
+                h3{
+                    margin-top: -0.5%;
+                    font-size: 1.4vw;
+                }
+                h2{
+                    margin-top: -2.5%;
+                }
+                p{
+                    width: 90%;
+                }
+            }
+            .socials{
+                
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                margin-top: 20%;
+                
+               
+                        .icon{
+                            font-size: 1.5vw;
+                            margin-right: 2%;
+                            padding-top: 2%;
+                            
+                        }
+                        p{
+                            font-size: 1.4vw;
+                            margin-top: -4%;
+                        }
+                    }
+                
+                
+            
+        }
+    }
+}

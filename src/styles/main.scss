@@ -5,7 +5,17 @@
 @import 'parallax-home';
 @import 'form';
 @import 'map';
+@import 'bestoffer';
+@import 'contact';
+@import 'amenities';
+@import 'apartments-page';
+@import 'neigh-page';
+@import 'gallery-page';
+@import 'building-page';
 
+.landing-container{
+  @include langing-page-rules;
+}
 
 ::-webkit-scrollbar {
     width: 10px; 

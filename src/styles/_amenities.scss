@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+
+.amenities{
+    .landing-container{
+        background-image: url(../assets/landings/amenities-landing.jpg);
+        h1{
+            @include font-style('heading');
+        }
+    }
+}

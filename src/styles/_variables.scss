@@ -5,7 +5,8 @@ $font-styles: (
     heading:(
     font-size: 6.8vw,
     color: #FFFFFF,
-    font-family: 'Cormorant SC'
+    font-family: 'Cormorant SC',
+    font-weight: 100
     ),
     h2: (
     font-size: 3.3vw,
@@ -25,3 +26,9 @@ $font-styles: (
     )
 );
 
+/* $icon-box-bg: #998663;
+$second-bg: #f5ece0;
+$overview-line-bg: #9D7957;
+$contactus-bg: #212121;
+$contactus-prim: #967647; */
+$primary: #DCBB65;

@@ -7,6 +7,7 @@ import Counter from "../../components/counter";
 import HomeParallax from "../../components/homeparallax";
 import Form from "../../components/contact-form";
 import Map from "../../components/map";
+import Offer from "../../components/bestoffer";
 
 function Home(){
     const handleScroll = () => {
@@ -15,7 +16,7 @@ function Home(){
       };
     return(
         <div className="home" id="home">
-            <div className="home-container">
+            <div className="landing-container">
             <div className="heading">
             <p className="heading-text">
                     <div className="top-items">
@@ -57,7 +58,7 @@ function Home(){
                 </Link>
             </div>
             </section>
-            <section><Counter /></section>
+            <section className="countup-section"><Counter /></section>
             <section className="overview-container">
                 <div className="overview-item" id="image"></div>
                 <div className="overview-item" id="text-block">
@@ -72,9 +73,16 @@ function Home(){
                     </p>
                 </div>
             </section>
-            <section><HomeParallax /></section>
-            <section><Form /></section>
-            <section className="map-container">
+            <section className="parallax-section"><HomeParallax /></section>
+            <section className="offer-section">
+                <div className="offer-heading">
+                <h3>Our Best Offer</h3>
+                <h2>Best of Harmony</h2>
+                </div>
+                <Offer />
+            </section>
+            <section className="form-section"><Form /></section>
+            <section className="map-section">
                 <div className="map-headings">
                 <h2>Prime Urban Haven</h2>
                 <h3>A dream location packed with potential</h3>

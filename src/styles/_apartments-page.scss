@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+
+.apartments{
+    .landing-container{
+        background-image: url(../assets/landings/apartments-landing.jpg);
+        h1{
+            @include font-style('heading');
+        }
+    }
+}
