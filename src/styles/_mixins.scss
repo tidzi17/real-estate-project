@@ -24,4 +24,13 @@
     align-items: center;
     justify-content: center;
   }
+  @mixin heading-rules{
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        text-align: center;
+        position: absolute;
+  }
   

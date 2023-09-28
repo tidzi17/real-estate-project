@@ -4,9 +4,11 @@
 .contact{
     .landing-container{
     background-image: url(../assets/landings/contact-landing.jpg);
+    .heading{
         h1{
             @include font-style('heading');
         }
+    }
     
     }
     .contact-info-container{

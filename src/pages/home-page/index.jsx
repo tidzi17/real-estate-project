@@ -8,12 +8,9 @@ import HomeParallax from "../../components/homeparallax";
 import Form from "../../components/contact-form";
 import Map from "../../components/map";
 import Offer from "../../components/bestoffer";
+import ScrollDown from "../../components/scrollButoon";
 
 function Home(){
-    const handleScroll = () => {
-        const section = document.getElementById('intro');
-        section.scrollIntoView({ behavior: 'smooth' });
-      };
     return(
         <div className="home" id="home">
             <div className="landing-container">
@@ -27,14 +24,9 @@ function Home(){
                     </div>
                 Inovative Living Spaces</p>
             </div>
-            <div class='scrolldown' onClick={handleScroll}>
-                <div class="chevrons">
-               <div class='chevrondown'></div>
-              <div class='chevrondown'></div>
-                </div>
-              </div>
+            <ScrollDown />
             </div>
-            <section className="intro-container" id="intro">
+            <section className="intro-container" id="first-section">
             <div class="intro-container-text">
                 <h3>The building</h3>
                 <h2>Elevate your living experience</h2>

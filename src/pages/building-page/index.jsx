@@ -1,5 +1,6 @@
 import React from "react";
 import '../../styles/main.scss';
+import ScrollDown from "../../components/scrollButoon";
 
 function Building(){
     return(
@@ -8,8 +9,9 @@ function Building(){
                 <div className="heading">
                 <h1>The Building</h1>
                 </div>
+                <ScrollDown />
             </div>
-            <section>
+            <section id="first-section">
                 something
             </section>
         </div>

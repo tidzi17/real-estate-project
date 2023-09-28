@@ -4,10 +4,12 @@
 .amenities{
     .landing-container{
         background-image: url(../assets/landings/amenities-landing.jpg);
-       
+       .heading{
         h1{
             @include font-style('heading');
         
     }
+       }
+        
     }
 }

@@ -4,8 +4,10 @@
 .neighbourhood{
     .landing-container{
         background-image: url(../assets/landings/neigh-landing.jpg);
-        h1{
-            @include font-style('heading');
+        .heading{
+            h1{
+                @include font-style('heading');
+            }
         }
     }
 }

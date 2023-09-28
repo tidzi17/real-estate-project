@@ -5,6 +5,7 @@ import Map from "../../components/map";
 import {LuPhone} from 'react-icons/lu';
 import {TfiEmail} from 'react-icons/tfi';
 import {FiMapPin} from 'react-icons/fi';
+import ScrollDown from "../../components/scrollButoon";
 
 function Contact(){
     return(
@@ -13,8 +14,9 @@ function Contact(){
                 <div className="heading">
                     <h1>Contact</h1>
                 </div>
+                <ScrollDown />
             </div>
-            <section className="contact-info-container">
+            <section className="contact-info-container" id="first-section">
                 <div className="container-item" id="info">
                     <div className="text-block">
                     <h3>Explore Your Dream Home Today</h3>

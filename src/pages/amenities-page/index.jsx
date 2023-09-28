@@ -1,5 +1,6 @@
 import React from "react";
 import '../../styles/main.scss';
+import ScrollDown from "../../components/scrollButoon";
 
 function Amenities(){
     return(
@@ -8,8 +9,9 @@ function Amenities(){
                 <div className="heading">
                 <h1>Amenities</h1>
                 </div>
+                <ScrollDown />
             </div>
-            <section>
+            <section id="first-section">
                 something
             </section>
         </div>

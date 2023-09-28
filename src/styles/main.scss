@@ -12,9 +12,13 @@
 @import 'neigh-page';
 @import 'gallery-page';
 @import 'building-page';
+@import 'scroll-button';
 
 .landing-container{
   @include langing-page-rules;
+  .heading{
+    @include heading-rules;
+  }
 }
 @media only screen and (max-width: 767px){
   .landing-container{
