@@ -154,6 +154,7 @@
             #info{
                 width: 70%;
                 height: fit-content;
+                margin-top: -40%;
 
                 .text-block{
                     align-items: center;
@@ -204,9 +205,19 @@
                             .name-inputs{
                                 display: flex;
                                 flex-direction: column;
+                                gap: 2vh;
                                 input[type="text"]{
                                     width: 91%;
+                                    height: 5vh;
+                                    /* padding: 0; */
                                 }
+                            }
+                            input[type="tel"],
+                            input[type="email"],
+                            /* input[type="text"], */
+                            textarea {
+                                height: 5vh;
+                                
                             }
                             button[type="submit"]{
                                 border-radius: 10px;
@@ -214,6 +225,9 @@
                                 height: 4.5vh;
                                 margin: 2% auto;
                                 font-size: 4vw;
+                            }
+                            textarea{
+                                height: 20vh;
                             }
                         }
                     }
