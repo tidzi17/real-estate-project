@@ -10,17 +10,83 @@
 
     }
     .contact-info-container{
-        width: 80%;
-        height: 80vh;
-        margin: 10% auto;
+        width: 100%;
+        height: 82vh;
+        margin: 0 auto 2% auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 5%;
+        background: linear-gradient(to bottom, #EEECE6, #e6e6e6);
+        padding-top: 5%;
+
         .container-item{
-            width: 50%;
+            width: 35%;
             height: 100%;
+        }
+        #form{
+            
+            width: 35%;
+            .form-container{
+                background-color: transparent;
+                width: 100%;
+                height: 100%;
+                margin-top: 0;
+                
+                .container-content{
+                    width: 100%;
+                    height: 100%;
+                    .contact-block{
+                        display: none;
+                    }
+                    .contact-form-container{
+                        width: 100%;
+                        height: 100%;
+                        form{
+                            width: 100%;
+                            height: 100%;
+                            .name-inputs{
+                                width: 100%;
+                                display: grid;
+                                grid-template-columns: 45% 45%;
+                                gap: 10%;
+                                margin-bottom: 3vh; 
+                                input[type="text"]{
+                                    height: 5vh;
+                                    border: 2px solid #443A2C;
+                                    background-color: #EEECE6;
+                                }
+                            }
+                            input[type="tel"],
+                            input[type="email"],
+                            /* input[type="text"], */
+                            textarea {
+                              height: 5vh;
+                              width: 96%;
+                              margin-bottom: 3vh; 
+                              padding: 0.6vw;
+                              border: 2px solid #443A2C;
+                              background-color: #EEECE6;
+                            }
+                            textarea{
+                                height: 31vh;
+                            }
+                            button[type="submit"]{
+                               height: 7.5vh;
+                               background-color: #6c5d43;
+                            }
+                        }
+                        
+                    }
+                }
+               
+                                
+                            
+                        
+                    
+                
+            }
         }
         #info{
             display: flex;
@@ -60,21 +126,30 @@
                     }
         }
     }
+    .map-container{
+        width: 100%;
+        height: 55vh;
+        margin: 5% auto;
+        background-color: antiquewhite;
+      
+    }
 }
 @media only screen and (max-width: 767px){
     .contact{
         .contact-info-container{
             width: 100%;
-            height: 60vh;
+            height: 122vh;
             display: flex;
             flex-direction: column;
             margin: 5% auto;
+            gap: 0;
             .container-item{
                 height: 50%;
                 align-items: center;
             }
             #map{
                 width: 100%;
+                height: 20vh;
             }
             #info{
                 width: 70%;
@@ -114,6 +189,42 @@
                     }
                 }
             }
+            #form{
+                width: 80%;
+                height: 60%;
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .form-container{
+                    .container-content{
+                    .contact-form-container{
+                        form{
+                            
+                            .name-inputs{
+                                display: flex;
+                                flex-direction: column;
+                                input[type="text"]{
+                                    width: 91%;
+                                }
+                            }
+                            button[type="submit"]{
+                                border-radius: 10px;
+                                width: 50vw;
+                                height: 4.5vh;
+                                margin: 2% auto;
+                                font-size: 4vw;
+                            }
+                        }
+                    }
+                }
+                }
+            }
         }
+      .map-container{
+        width: 100%;
+        height: 27vh;
+        
+      } 
     }
 }

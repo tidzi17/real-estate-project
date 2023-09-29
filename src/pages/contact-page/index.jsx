@@ -34,11 +34,11 @@ function Contact(){
                     <p className="contact-list-item"><FiMapPin className="icon"/> 21.Jump Street, Miami USA</p>
                     </div>
                 </div>
-                <div className="container-item" id="map">
-                    <Map />
+                <div className="container-item" id="form">
+                    <Form />
                 </div>
             </section>
-            <section><Form /></section>
+            <section className="map-container" id="map"><Map /></section>
         </div>
     )
 }
