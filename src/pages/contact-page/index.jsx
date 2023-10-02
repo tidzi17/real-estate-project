@@ -39,6 +39,13 @@ function Contact(){
                 </div>
             </section>
             <section className="map-container" id="map"><Map /></section>
+            <section className="follow-us-container">
+                <div className="text-block">
+                    <h3>LET’S CONNECT</h3>
+                    <h2>Follow @harmony.residence</h2>
+                </div>
+                <div className="imgs"></div>
+            </section>
         </div>
     )
 }

@@ -23,18 +23,20 @@ function Navbar(){
                 <ul className={Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
                     <div className="nav-box" id="nav-box-first">
                 <li className="nav-item" onClick={() => navigate("/")}>Home</li>
-                <li className="nav-item" onClick={() => navigate("/thebuilding")}>The Building</li>
+               {/*  <li className="nav-item" onClick={() => navigate("/thebuilding")}>The Building</li> */}
                 <li className="nav-item" onClick={() => navigate("/apartments")}>Apartments</li>
                 <li className="nav-item" onClick={() => navigate("/gallery")}>Gallery</li>
+                <li className="nav-item" onClick={() => navigate("/neighbourhood")}>Neighbourhood</li>
                 </div>
                 <div className="nav-logo">
                     <img src={logo} alt="logo" className="logo"/>
                 </div>
                 <div className="nav-box" id="nav-box-second">
-                <li className="nav-item" onClick={() => navigate("/neighbourhood")}>Neighbourhood</li>
+               
                 <li className="nav-item" onClick={() => navigate("/amenities")}>Amenities</li>
                 <li className="nav-item" onClick={() => navigate("/contact")}>Contact</li>
                 <p className="nav-nub">+785 354 487</p>
+                <button style={{fontSize:'1vw', border:'1px solid white', padding:'1%'}}>Register Interest</button>
                 </div>
                 </ul>
               

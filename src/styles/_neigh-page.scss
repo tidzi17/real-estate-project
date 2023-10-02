@@ -8,4 +8,73 @@
             @include font-style('heading');
         }
     }
+    .intro-container{
+        height: fit-content;
+        width: 100%;
+        margin: 2% auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h2{
+            margin-top: -2%;
+        }
+
+        p{
+            width: 60%;
+            margin-top: -2%;
+        }
+    }
+    .parallax{
+        width: 95vw;
+        height: 75vh;
+        margin: 0 auto 5% auto;
+        top: 0;
+        
+        .parallax-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            h2{
+                /* font-weight: 00; */
+                font-style: italic;
+            }
+        }
+    }
+    .block-container{
+        width: 80vw;
+        height: 100vh;
+        border: 1px solid red;
+        margin: 5% auto;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        .block-item{
+            height: 100%;
+            width: 50%;
+            border: 1px solid blue;
+        }
+        #mall{
+            background-image: url(../assets/neigh/mall.jpeg);
+            @include bg-rules;
+            background-size: cover;
+        }
+        #text-block{
+            text-align: right;
+            h3{
+                margin-top: -1%;
+            }
+            h2{
+                margin-top: -2%;
+            }
+    
+            p{
+                
+                margin-top: -2%;
+            }
+        }
+    }
 }
