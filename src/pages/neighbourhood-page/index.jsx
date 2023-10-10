@@ -2,7 +2,12 @@ import React from "react";
 import '../../styles/main.scss';
 import ScrollDown from "../../components/scrollButoon";
 import { Parallax } from 'react-parallax';
-import bgImage from '../../assets/neigh/view.webp'
+import card1bg from '../../assets/neigh/card-edu.jpeg';
+import card2bg from '../../assets/neigh/card-caffe.webp';
+import card3bg from '../../assets/neigh/card-muse.jpeg';
+import bgImage from '../../assets/neigh/beach.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faShoppingBag, faSchool, faUtensils, faDumbbell } from '@fortawesome/free-solid-svg-icons';
 
 function Neighbourhood(){
     return(
@@ -14,6 +19,9 @@ function Neighbourhood(){
                 <ScrollDown />
             </div>
             <section className="intro-container" id="first-section">
+                <div className="first-section-img" style={{ backgroundImage: `url(${bgImage})` }}>
+                </div>
+                <div className="text-block">
             <h3>Ocean Serenity - Where Dreams Meet the Sea</h3>
             <h2>Discover a Coastal Retreat </h2>
             <p>Immerse yourself in the captivating serenity of ocean living 
@@ -24,20 +32,41 @@ function Neighbourhood(){
                   leisurely walks along sandy shores, and embrace a tranquil 
                   existence that nurtures your soul. Nestled in Miami's vibrant
                    neighborhood, this coastal retreat offers a harmonious blend
-                    of urban conveniences and the raw beauty of nature. Experience
-                     the essence of ocean serenity at Harmony Residence, where life's
-                      wonders unfold with every tide.</p>
+                    of urban conveniences and the raw beauty of nature.</p>
+                    </div>
             </section>
-            <section className="parallax">
-            <Parallax className="parallax-container"
-        bgImage={bgImage} 
-        strength={300}
-      >
-        <div>
-          <h2>Wake up to breathtaking sunrises</h2>
-        </div>
-      </Parallax>
-            </section>
+          <section className="features">
+            <div className="features-item">
+                <div className="features-item-img">
+                <FontAwesomeIcon icon={faSun} className="icon"/>
+                </div>
+                <p>Beach</p>
+            </div>
+            <div className="features-item">
+                <div className="features-item-img">
+                <FontAwesomeIcon icon={faShoppingBag} className="icon"/>
+                </div>
+                <p>Shopping</p>
+            </div>
+            <div className="features-item">
+                <div className="features-item-img">
+                <FontAwesomeIcon icon={faSchool} className="icon"/>
+                </div>
+                <p>Schools & Daycare</p>
+            </div>
+            <div className="features-item">
+            <div className="features-item-img">
+                <FontAwesomeIcon icon={faUtensils} className="icon"/>
+                </div>
+                <p>Restaurants</p>
+            </div>
+            <div className="features-item">
+                <div className="features-item-img">
+                <FontAwesomeIcon icon={faDumbbell} className="icon"/>
+                </div>
+                <p>Sports</p>
+            </div>
+          </section>
             <section className="block-container">
                 <div className="block-item" id="mall"></div>
                 <div className="block-item" id="text-block">
@@ -50,8 +79,49 @@ Welcome to Harmony Residence, where coastal serenity meets urban vibrancy, craft
                       </p>
                 </div>
             </section>
+            <section className="cards">
+                <h2>What's Nearby</h2>
+                <div className="cards-container">
+                    <div className="flip-card">
+                        <div className="flip-card-front" style={{ backgroundImage: `url(${card1bg})` }}>
+                            <h2>Education</h2>
+                        </div>
+                        <div className="flip-card-back" >
+                            <p>something else</p>
+                        </div>
+                    </div>
+                    <div className="flip-card">
+                    <div className="flip-card-front" style={{ backgroundImage: `url(${card2bg})` }}>
+                            <h2>Food&Drinks</h2>
+                        </div>
+                        <div className="flip-card-back">
+                            <p>something else</p>
+                        </div>
+                    </div>
+                    <div className="flip-card">
+                    <div className="flip-card-front" style={{ backgroundImage: `url(${card3bg})` }}>
+                            <h2>Cultural</h2>
+                        </div>
+                        <div className="flip-card-back">
+                            <p>something else</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
 
 export default Neighbourhood;
+
+
+  {/* <section className="parallax">
+            <Parallax className="parallax-container"
+        bgImage={bgImage} 
+        strength={300}
+      >
+        <div>
+          <h2>Wake up to breathtaking sunrises</h2>
+        </div>
+      </Parallax>
+            </section> */}

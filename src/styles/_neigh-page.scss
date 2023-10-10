@@ -2,6 +2,7 @@
 @import 'mixins';
 
 .neighbourhood{
+    background-color: #0e0d0d;
     .landing-container{
         background-image: url(../assets/landings/neigh-landing.jpg);
         h1{
@@ -9,53 +10,85 @@
         }
     }
     .intro-container{
-        height: fit-content;
+        height: 60vh;
         width: 100%;
-        margin: 2% auto 0 auto;
+        margin: 7% auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        text-align: center;
-        h2{
-            margin-top: -2%;
-        }
-
-        p{
-            width: 60%;
-            margin-top: -2%;
-        }
-    }
-    .parallax{
-        width: 95vw;
-        height: 75vh;
-        margin: 0 auto 5% auto;
-        top: 0;
-        
-        .parallax-container{
-            width: 100%;
+        justify-content: center;
+        gap: 4%;
+        text-align: right;
+        .first-section-img{
+            width: 40%;
             height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include bg-rules;
+            box-shadow: 1px 4px 7px 7px rgba($color: #1d1d1d, $alpha: 1.0);
+            
+        }
+        .text-block{
+            width: 40%;
+            height: 100%;
             
             h2{
-                /* font-weight: 00; */
-                font-style: italic;
+                margin-top: -4%;
+            }
+    
+            p{
+                width: 100%;
+                margin-top: -2%;
+                line-height: 150%;
             }
         }
+        
     }
+    .features{
+        width: 100%;
+        height: 30vh;
+        margin: 7% auto;
+        border-top: 1px solid #302e2e;
+        border-bottom: 1px solid #302e2e;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        .features-item{
+            width: 15%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+           
+            .features-item-img{
+                width: 90%;
+                height: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icon{
+                    height: 80%;
+                    outline: #e4e4e4;
+                    color: #302e2e;
+                    
+                }
+            }
+        }
+
+    }
+    
     .block-container{
         width: 80vw;
-        height: 100vh;
-        border: 1px solid red;
-        margin: 5% auto;
+        height: 90vh;
+        margin: 5% auto 0 auto;
         display: flex;
         flex-direction: row;
         gap: 5%;
         .block-item{
-            height: 100%;
+            height: 95%;
             width: 50%;
-            border: 1px solid blue;
         }
         #mall{
             background-image: url(../assets/neigh/mall.jpeg);
@@ -74,6 +107,78 @@
             p{
                 
                 margin-top: -2%;
+                line-height: 170%;
+               
+                
+            }
+        }
+    }
+    .cards{
+        width: 90%;
+        height: 55vh;
+        margin: 0% auto;
+        border-top: 1px solid white ;
+        padding-bottom: 10%;
+        h2{
+           align-items: center;
+           display: flex;
+        }
+        .cards-container{
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            background-color: transparent;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            &:focus{
+                outline: 0;
+            }
+            .flip-card{
+                width: 20%;
+                height: 100%;
+                position: relative;
+                text-align: center;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+                backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                cursor: pointer;
+                  &:hover 
+                  {
+                    transform: rotateY(180deg);
+                  }
+                .flip-card-front,
+                .flip-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                  }
+                  .flip-card-front {
+                    z-index: 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include bg-rules;
+                    background-size: cover;
+                    h2{
+                        color: #ffffff;
+                        font-weight: 100;
+                    }
+                  }
+                  
+                  .flip-card-back {
+                   background: rgb(22, 22, 22);
+                   border: 1px solid rgb(95, 70, 16);
+                   color: white;
+                   transform: rotateY(180deg);
+                   z-index: 1;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+              }
             }
         }
     }

@@ -6,6 +6,10 @@ import {LuPhone} from 'react-icons/lu';
 import {TfiEmail} from 'react-icons/tfi';
 import {FiMapPin} from 'react-icons/fi';
 import ScrollDown from "../../components/scrollButoon";
+import fi from "../../assets/contact/first.png";
+import se from "../../assets/contact/sec.jpeg";
+import thi from "../../assets/contact/thi.jpeg";
+import fo from "../../assets/contact/fou.webp";
 
 function Contact(){
     return(
@@ -44,7 +48,12 @@ function Contact(){
                     <h3>LET’S CONNECT</h3>
                     <h2>Follow @harmony.residence</h2>
                 </div>
-                <div className="imgs"></div>
+                <div className="links-container">
+                    <div className="item" style={{ backgroundImage: `url(${fi})` }}></div>
+                    <div className="item" style={{ backgroundImage: `url(${se})` }}></div>
+                    <div className="item"  style={{ backgroundImage: `url(${thi})` }}></div>
+                    <div className="item"  style={{ backgroundImage: `url(${fo})` }}></div>
+                </div>
             </section>
         </div>
     )
