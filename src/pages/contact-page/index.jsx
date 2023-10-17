@@ -33,8 +33,8 @@ function Contact(){
                    </p>
                     </div>
                     <div className="socials">
-                    <p className="contact-list-item"><LuPhone className="icon"/> +785 354 487</p>
-                    <p className="contact-list-item"><TfiEmail className="icon"/> somemail@gmail.com</p>
+                    <p className="contact-list-item"><LuPhone className="icon"/> +598/5659-56</p>
+                    <p className="contact-list-item"><TfiEmail className="icon"/> info@harmony.com</p>
                     <p className="contact-list-item"><FiMapPin className="icon"/> 21.Jump Street, Miami USA</p>
                     </div>
                 </div>

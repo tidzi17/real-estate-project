@@ -16,8 +16,8 @@ function Form() {
                 </p>
                 </div>
                 <div className="contact-links">
-                    <p><LuPhone className="icon"/> +785 345 487</p>
-                    <p><TfiEmail className="icon"/> somemail@gmail.com</p>
+                    <p><LuPhone className="icon"/> +598/5659-56</p>
+                    <p><TfiEmail className="icon"/> info@harmony.com</p>
                 </div>
             </div>
             <div className="contact-form-container">

@@ -35,7 +35,7 @@ function Navbar(){
                
                 <li className="nav-item" onClick={() => navigate("/amenities")}>Amenities</li>
                 <li className="nav-item" onClick={() => navigate("/contact")}>Contact</li>
-                <p className="nav-nub">+785 354 487</p>
+                <p className="nav-nub">+598 565 956</p>
                 <button style={{fontSize:'1vw', border:'1px solid white', padding:'1%'}}>Register Interest</button>
                 </div>
                 </ul>
