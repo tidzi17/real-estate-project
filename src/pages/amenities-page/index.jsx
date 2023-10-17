@@ -11,7 +11,9 @@ import item4 from '../../assets/amenities/icons/smart-door.png';
 import item5 from '../../assets/amenities/icons/thermostat.png';
 import item6 from '../../assets/amenities/icons/smart-lighting.png';
 import item7 from '../../assets/amenities/icons/household-appliance.png';
-
+import gym from '../../assets/amenities/gym.jpeg';
+import rooftop from '../../assets/amenities/rooftop.webp';
+import pool from '../../assets/amenities/rooftoppool.webp';
 const smarthouseIcons =  [item1, item2, item3, item4, item5, item6, item7];
 
 function Amenities(){
@@ -59,9 +61,19 @@ function Amenities(){
                     ))}
                 </div>
             </section>
-            <section className="roof-container"></section>
+            <section className="roof-container">
+                <div className="text-block">
+                    <h3>Seamless Harmonious Living</h3>
+                    <h2>Exceptional Living Experience</h2>
+                    <p>Immerse yourself in the refreshing waters of our rooftop pool, unwind in the serene spa, or indulge in the pleasure of our state-of-the-art fitness center. Our 24/7 concierge service ensures that your every need is met with utmost care and attention.</p>
+                </div>
+                <div class="container-items">
+                <div class="item item-first" style={{ backgroundImage: `url(${gym})` }}></div>
+                <div class="item item-second" style={{ backgroundImage: `url(${rooftop})` }}></div>
+                <div class="item item-third" style={{ backgroundImage: `url(${pool})` }}></div>
+            </div>
+            </section>
         </div>
     )
 }
-
 export default Amenities;
