@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import '../../styles/main.scss';
 import ScrollDown from "../../components/scrollButoon";
 import data from './data.json';
-import img from '../../assets/apartments/1bed/floorplan.png';
+import MortgageCalculator from "../../components/calculator";
+
+
 
 
 function Apartments(){
+    
 
     const [activeContent, setActiveContent] = useState('floorPlan');
     const [selectedApartmentType, setSelectedApartmentType] = useState('1-bedroom');
@@ -24,16 +27,6 @@ function Apartments(){
 
     const apartmentsData = data.apartments;
 
-   /*  const filteredApartments = apartmentsData.filter(apartment => {
-        if (activeContent === 'floorPlan') {
-            return apartment.floor;
-        } else if (activeContent === 'photos') {
-            return apartment.photos && apartment.photos.length > 0;
-        } else if (activeContent === 'video') {
-            return apartment.video;
-        }
-        return true;
-    }); */
 
     const selectedApartments = apartmentsData.filter(apartment => {
         return apartment.type === selectedApartmentType;
@@ -70,23 +63,24 @@ function Apartments(){
                         <div className="ap-imgs">
                         {activeContent === 'floorPlan' && (
                         <div className="content">
-                        <img src={selectedApartment.floor} alt="Floor Plan" className="content-item" width="100%"
-                         height="100%"/>
+                        <img src={selectedApartment.floor} alt="Floor Plan" className="floorplan" />
                      </div>
                       )}
                        {activeContent === 'photos' && selectedApartment.photos && (
                        <div className="content">
-                        <img src={selectedApartment.photos[0]} alt="Apartment Photo" className="content-item"/>
+                        <img src={selectedApartment.photos[0]} alt="Apartment Photo" className="gallery"/>
                         </div>
                            )}
+                           
                        {activeContent === 'video' && (
                       <div className="content">
                       <iframe
                          title="Apartment Video"
                          width="100%"
                          height="100%"
-                         src={`https://www.youtube.com/embed/${selectedApartment.video}`}
+                         src={`https://www.youtube.com/embed/${selectedApartment.video}?controls=0&autoplay=1&mute=1&showinfo=0`}
                          allowFullScreen
+                         
                          className="content-item"
                          ></iframe>
                       </div>
@@ -116,7 +110,16 @@ function Apartments(){
                     </div>
                 </div>
             </section>
-            <section className="calculator"></section>
+            <section className="calculator-container">
+                <div className="heading">
+                    <h3>Ready to buy</h3>
+                    <h2>Calculate your motgage rate in simple steps</h2>
+                </div>
+                <div className="container">
+                    <MortgageCalculator />
+                </div>
+                
+            </section>
         </div>
     )
 }

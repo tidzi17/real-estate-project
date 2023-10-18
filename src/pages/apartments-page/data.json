@@ -8,12 +8,12 @@
         "area": "50m²",
         "terrace": "5m²",
         "bath": "1",
-        "floor": "apartments/1bed/floorplan.jpg",
+        "floor": "/apartments/1bed/floorplan.png",
         "photos": [
-          "apartment1_photo2.jpg",
-          "apartment1_photo3.jpg",
-          "apartment1_photo4.jpg",
-          "apartment1_photo5.jpg"
+          "/apartments/1bed/2.webp",
+          "/apartments/1bed/3jpeg",
+          "/apartments/1bed/4.jpg",
+          "/apartments/1bed/5.webp"
         ],
         "video": "Soj5TJG0NTM"
       },
@@ -24,12 +24,12 @@
         "area": "70m²",
         "terrace": "8m²",
         "bath": "2",
-        "floor": "apartments/2bed/floorplan.png",
+        "floor": "/apartments/2bed/floorplan.png",
         "photos": [
-          "apartment2_photo2.jpg",
-          "apartment2_photo3.jpg",
-          "apartment2_photo4.jpg",
-          "apartment2_photo5.jpg"
+          "/apartments/2bed/4.jpg",
+          "/apartments/2bed/3.jpeg",
+          "/apartments/2bed/5.webp",
+          "/apartments/2bed/2.webp"
         ],
         "video": "xgZd_vFNkUs"
       },
@@ -40,12 +40,12 @@
         "area": "110m²",
         "terrace": "10m²",
         "bath": "2",
-        "floor": "apartments/3bed/floorplan.png",
+        "floor": "/apartments/3bed/floorplan.png",
         "photos": [
-          "apartment3_photo2.jpg",
-          "apartment3_photo3.jpg",
-          "apartment3_photo4.jpg",
-          "apartment3_photo5.jpg"
+          "/apartments/1bed/5.webp",
+          "/apartments/1bed/3jpeg",
+          "/apartments/1bed/4.jpg",
+          "/apartments/1bed/2.webp"
         ],
         "video": "zOWuNnBF_ZE"
       }
