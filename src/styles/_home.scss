@@ -40,8 +40,8 @@
 }
     .intro-container{
         width: 80vw;
-        height: 120vh;
-        margin: 3% auto;
+        height: 110vh;
+        margin: -4% auto 2% auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,7 +53,7 @@
             flex-direction: column;
             text-align: center;
             justify-content: center;
-            margin: 1% auto;
+            margin: 0 auto;
             gap: 0;
             position: relative;
             h2{
