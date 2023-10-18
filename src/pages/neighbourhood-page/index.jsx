@@ -87,7 +87,12 @@ Welcome to Harmony Residence, where coastal serenity meets urban vibrancy, craft
                             <h2>Education</h2>
                         </div>
                         <div className="flip-card-back" >
-                            <p>something else</p>
+                            <ul>
+                                <li>600m Elementary School</li>
+                                <li>400m "Miami High School"</li>
+                                <li>1.2km State College</li>
+                                <li>2km College of Applied Arts</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="flip-card">
@@ -95,7 +100,12 @@ Welcome to Harmony Residence, where coastal serenity meets urban vibrancy, craft
                             <h2>Food&Drinks</h2>
                         </div>
                         <div className="flip-card-back">
-                            <p>something else</p>
+                            <ul>
+                            <li>50m "Potters" Caffe</li>
+                            <li>350m "MacLaren's" Pub</li>
+                            <li>350m "Lary's" Restaurant</li>
+                            <li>500m "The Garrison" Pub</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="flip-card">
@@ -103,7 +113,10 @@ Welcome to Harmony Residence, where coastal serenity meets urban vibrancy, craft
                             <h2>Cultural</h2>
                         </div>
                         <div className="flip-card-back">
-                            <p>something else</p>
+                            <ul>
+                                <li>600m Museum of Modern Art</li>
+                                <li>2km Museum of History</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

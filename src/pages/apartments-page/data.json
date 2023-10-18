@@ -1,0 +1,53 @@
+{
+    "apartments": [
+      {
+        "type": "1-bedroom",
+        "title": "1-Bedroom Apartment",
+        "price": "$365 000,00",
+        "area": "50m²",
+        "terrace": "5m²",
+        "bath": "1",
+        "photos": [
+          "apartment1_photo1.jpg",
+          "apartment1_photo2.jpg",
+          "apartment1_photo3.jpg",
+          "apartment1_photo4.jpg",
+          "apartment1_photo5.jpg"
+        ],
+        "video": "https://www.example.com/apartment1_video"
+      },
+      { 
+        "type": "1-bedroom",
+        "title": "2-Bedroom Apartment",
+        "price": "$565 000,00",
+        "area": "70m²",
+        "terrace": "8m²",
+        "bath": "1",
+        "photos": [
+          "apartment2_photo1.jpg",
+          "apartment2_photo2.jpg",
+          "apartment2_photo3.jpg",
+          "apartment2_photo4.jpg",
+          "apartment2_photo5.jpg"
+        ],
+        "video": "https://www.example.com/apartment2_video"
+      },
+      {
+        "type": "3-bedroom",
+        "title": "3-Bedroom Apartment",
+        "price": "$765 000,00",
+        "area": "110m²",
+        "terrace": "10m²",
+        "bath": "2",
+        "photos": [
+          "apartment3_photo1.jpg",
+          "apartment3_photo2.jpg",
+          "apartment3_photo3.jpg",
+          "apartment3_photo4.jpg",
+          "apartment3_photo5.jpg"
+        ],
+        "video": "https://www.example.com/apartment3_video"
+      }
+    ]
+  }
+  

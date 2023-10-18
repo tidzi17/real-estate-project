@@ -20,7 +20,10 @@ function App() {
         <Route path="/" exact element={<Home />} />
         {/* <Route path="/thebuilding" element={<Building />} /> */}
         <Route path="/apartments" element={<Apartments />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery" element={<Gallery category="All" />} />
+        <Route path="/gallery/all" element={<Gallery category="All" />} />
+        <Route path="/gallery/interior" element={<Gallery category="Interior" />} />
+        <Route path="/gallery/exterior" element={<Gallery category="Exterior" />} />
         <Route path="/neighbourhood" element={<Neighbourhood />} />
         <Route path="/amenities" element={<Amenities />} />
         <Route path="/contact" element={<Contact />} />

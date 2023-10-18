@@ -119,6 +119,7 @@
         margin: 0% auto;
         border-top: 1px solid white ;
         padding-bottom: 10%;
+        position: inherit;
         h2{
            align-items: center;
            display: flex;
@@ -132,29 +133,33 @@
             justify-content: space-around;
             background-color: transparent;
             perspective: 1000px;
+            transition: transform 1s;
             transform-style: preserve-3d;
             &:focus{
                 outline: 0;
             }
             .flip-card{
-                width: 20%;
+                will-change: transform;
+                width: 22%;
                 height: 100%;
                 position: relative;
                 text-align: center;
                 transition: transform 0.6s;
                 transform-style: preserve-3d;
-                backface-visibility: hidden;
-                -moz-backface-visibility: hidden;
+                /* backface-visibility: hidden; */
+                /* -moz-backface-visibility: hidden; */
                 cursor: pointer;
                   &:hover 
                   {
                     transform: rotateY(180deg);
+                    transition: transform 0.6s;
                   }
                 .flip-card-front,
                 .flip-card-back {
                 position: absolute;
                 width: 100%;
                 height: 100%;
+                backface-visibility: hidden;
                   }
                   .flip-card-front {
                     z-index: 2;
@@ -163,6 +168,7 @@
                     align-items: center;
                     @include bg-rules;
                     background-size: cover;
+                    border: 1px solid rgb(95, 70, 16);
                     h2{
                         color: #ffffff;
                         font-weight: 100;
@@ -173,11 +179,20 @@
                    background: rgb(22, 22, 22);
                    border: 1px solid rgb(95, 70, 16);
                    color: white;
-                   transform: rotateY(180deg);
+                   transform: rotateY( 180deg );
                    z-index: 1;
                    display: flex;
                    justify-content: center;
                    align-items: center;
+                   ul{
+                    list-style-type:circle;
+                    text-align: left;
+                    li{
+                        font-size: 1.2vw;
+                        color: #534939;
+                        font-weight: 100;
+                    }
+                   }
               }
             }
         }

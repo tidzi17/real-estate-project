@@ -8,7 +8,6 @@
                 @include font-style('heading');
             }
     }
-    /* ImageGallery.css */
 
 .image-gallery {
     text-align: center;
@@ -17,8 +16,8 @@
     width: 80%;
     margin: 5% auto 15% auto;
     .category-buttons {
-      
         margin: 1% 2% 4% auto;
+        border-bottom: 1px solid #DCBB65;
         button {
             margin-left: 4%;
             padding: 10px;

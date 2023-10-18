@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
+
+import { useParams, Link } from 'react-router-dom';
 import '../../styles/main.scss';
 import ScrollDown from "../../components/scrollButoon";
 import int from '../../assets/gallery/interior/1.jpg';
@@ -15,6 +17,7 @@ import ex from '../../assets/gallery/exterior/2.jpg';
 import ex1 from '../../assets/gallery/exterior/3.png';
 
 function Gallery(){
+    
     const [currentCategory, setCurrentCategory] = useState("All");
 
     const interiorImages = [int, int1, int2, int3, int4, int5, int6, int7, int8, int9]; 
@@ -28,6 +31,9 @@ function Gallery(){
       : currentCategory === "Interior"
       ? interiorImages
       : exteriorImages;
+
+
+    
 
     return(
         <div className="gallery-page" id="gallery-page">
