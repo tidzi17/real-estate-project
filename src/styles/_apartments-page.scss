@@ -85,11 +85,20 @@
                 width: 100%;
                 height: 90%;
                 border: 1px solid olivedrab;
+                .content{
+                    width: 95%;
+                    height: 95%;
+                    background-color: pink;
+                    margin: 1% auto;
+                    .content-item{
+                        /* align-items: ; */
+                    }
+                }
             }
             .ap-nav{
                 width: 50%;
                 height: 10%;
-                background-color: green;
+                background-color: rgb(162, 234, 162);
                 display: flex;
                 justify-content: space-around;
                 button{
@@ -142,12 +151,13 @@
                     gap: 3%;
                     button{
                         border: none;
-                        background:#967647;
-                        font-size: 1.1vw;
+                        background:#837355;
+                        font-size: 1.2vw;
                         height: 5.1vh;
                         color: rgb(235, 233, 233);
                         cursor: pointer;
                         font-weight: 100;
+                        box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.42);;
                     }
                 }
             }

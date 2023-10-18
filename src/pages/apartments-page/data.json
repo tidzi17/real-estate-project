@@ -1,5 +1,6 @@
+
 {
-    "apartments": [
+  "apartments": [
       {
         "type": "1-bedroom",
         "title": "1-Bedroom Apartment",
@@ -7,30 +8,30 @@
         "area": "50m²",
         "terrace": "5m²",
         "bath": "1",
+        "floor": "apartments/1bed/floorplan.jpg",
         "photos": [
-          "apartment1_photo1.jpg",
           "apartment1_photo2.jpg",
           "apartment1_photo3.jpg",
           "apartment1_photo4.jpg",
           "apartment1_photo5.jpg"
         ],
-        "video": "https://www.example.com/apartment1_video"
+        "video": "Soj5TJG0NTM"
       },
       { 
-        "type": "1-bedroom",
+        "type": "2-bedroom",
         "title": "2-Bedroom Apartment",
         "price": "$565 000,00",
         "area": "70m²",
         "terrace": "8m²",
-        "bath": "1",
+        "bath": "2",
+        "floor": "apartments/2bed/floorplan.png",
         "photos": [
-          "apartment2_photo1.jpg",
           "apartment2_photo2.jpg",
           "apartment2_photo3.jpg",
           "apartment2_photo4.jpg",
           "apartment2_photo5.jpg"
         ],
-        "video": "https://www.example.com/apartment2_video"
+        "video": "xgZd_vFNkUs"
       },
       {
         "type": "3-bedroom",
@@ -39,14 +40,14 @@
         "area": "110m²",
         "terrace": "10m²",
         "bath": "2",
+        "floor": "apartments/3bed/floorplan.png",
         "photos": [
-          "apartment3_photo1.jpg",
           "apartment3_photo2.jpg",
           "apartment3_photo3.jpg",
           "apartment3_photo4.jpg",
           "apartment3_photo5.jpg"
         ],
-        "video": "https://www.example.com/apartment3_video"
+        "video": "zOWuNnBF_ZE"
       }
     ]
   }
