@@ -98,7 +98,7 @@ function Apartments(){
                             <ul className="info">
                                 <li>Price: <span>{selectedApartment.price}</span> </li>
                                 <li>Apartment area: <span>{selectedApartment.area}</span> </li>
-                                <li>Terrace area<span>{selectedApartment.terrace}</span> </li>
+                                <li>Terrace area: <span>{selectedApartment.terrace}</span> </li>
                                 <li>Bathroom: <span>{selectedApartment.bath}</span></li>
                             </ul>
                             <p>Discover your dream home in our apartments, where aspirations become a reality. </p>
