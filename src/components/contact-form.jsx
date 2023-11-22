@@ -22,10 +22,8 @@ function Form() {
             </div>
             <div className="contact-form-container">
             <form>
-            <div className="name-inputs">
             <input type="text" name="firstname" id="firstname" placeholder="First Name"/>
             <input type="text" name="lastname" id="lastname" placeholder="Last Name"/>
-            </div>
             <input type="tel" name="phonenum" id="phonenum" placeholder="Phone Number"/>
             <input type="email" name="email" id="email" placeholder="E-mail"/>
             <textarea name="comment" id="comment" /* cols="40" rows="10" */ placeholder="Additional comment..."></textarea>

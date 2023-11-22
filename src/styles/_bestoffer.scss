@@ -2,5 +2,108 @@
 .offer-container{
     width: 100%;
     height: 100%;
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    .offer-content{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .offer-content-content{
+            width: 100%;
+            height: 80%;
+            .content{
+                width: 100%;
+                height: 100%;
+                margin: 1% auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    object-fit: cover;
+                    .slider{
+                        height: 70%;
+                    }
+                .floorplan{
+                    margin: 0 auto;
+                    
+                }
+            }
+        }
+        .offer-content-nav{
+            width: 60%;
+            height: 10%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            button{
+                color: #443A2C;
+                border: none;
+                background-color: transparent;
+                font-size: 20px;
+                font-weight: 400;
+                transition: 1s ease-in ;
+                cursor: pointer;
+                &:hover{
+                    text-decoration:  underline 2px solid rgb(92, 64, 5);
+                   
+                }
+            }
+        }
+    }
+    .offer-info{
+        width: 40%;
+        height: 100%;
+        .info-content{
+            height: 100%;
+            width: 90%;
+            margin-left: 5%;
+            h3{
+                color: #443A2C;
+            }
+            ul{
+                width: 60%;
+                height: 40%;
+                list-style-type: none;
+                border-bottom: 1px solid rgb(112, 82, 5);
+                border-top: 1px solid rgb(112, 82, 5);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                li{
+                    font-size: 1.2vw;
+                    font-family: "Inter";
+                    font-weight: 500;
+                    margin-left: -10%;
+                    span{
+                        color: rgb(169, 143, 17);
+                        margin-left: 2%;
+                    }
+                }
+            }
+            p{
+                width: 70%;
+                line-height: 140%;
+            }
+            .buttons{
+                display: flex;
+                gap: 3%;
+                button{
+                    border: none;
+                    background:#967647;
+                    font-size: 15px;
+                    height: 40px;
+                    width: 150px;
+                    border-radius: 10px;
+                    color: rgb(235, 233, 233);
+                    cursor: pointer;
+                    font-weight: 100;
+                    box-shadow:  0px 4px 4px 0px rgba(89, 88, 88, 0.2);;
+                }
+            }
+        }
+    
+    }
 }

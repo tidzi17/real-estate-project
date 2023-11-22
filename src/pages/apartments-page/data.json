@@ -2,6 +2,7 @@
 {
   "apartments": [
       {
+        "id": 1,
         "type": "1-bedroom",
         "title": "1-Bedroom Apartment",
         "price": "$365 000,00",
@@ -11,13 +12,14 @@
         "floor": "/apartments/1bed/floorplan.png",
         "photos": [
           "/apartments/1bed/2.webp",
-          "/apartments/1bed/3jpeg",
+          "/apartments/1bed/3.jpeg",
           "/apartments/1bed/4.jpg",
           "/apartments/1bed/5.webp"
         ],
         "video": "Soj5TJG0NTM"
       },
       { 
+        "id": 2,
         "type": "2-bedroom",
         "title": "2-Bedroom Apartment",
         "price": "$565 000,00",
@@ -27,13 +29,14 @@
         "floor": "/apartments/2bed/floorplan.png",
         "photos": [
           "/apartments/2bed/4.jpg",
-          "/apartments/2bed/3.jpeg",
+          "/apartments/2bed/3.webp",
           "/apartments/2bed/5.webp",
           "/apartments/2bed/2.webp"
         ],
         "video": "xgZd_vFNkUs"
       },
       {
+        "id": 3,
         "type": "3-bedroom",
         "title": "3-Bedroom Apartment",
         "price": "$765 000,00",
@@ -43,7 +46,7 @@
         "floor": "/apartments/3bed/floorplan.png",
         "photos": [
           "/apartments/1bed/5.webp",
-          "/apartments/1bed/3jpeg",
+          "/apartments/1bed/3.jpeg",
           "/apartments/1bed/4.jpg",
           "/apartments/1bed/2.webp"
         ],

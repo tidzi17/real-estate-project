@@ -1,7 +1,7 @@
 .form-container{
     margin: 5% auto;
     width: 100%;
-    height: 65vh;
+    height: 75vh;
     background-color: #212121;
     display: flex;
     align-items: center;
@@ -67,42 +67,34 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                .name-inputs{
-                    display: inline-flex;
-                    width: 100%;
-                    gap: 1%;
-                    gap: 1.4vw;
-                    margin-bottom: 1vh;
-                    input[type="text"] {
-                        flex: 1;
-                        height: 3.7vh;
-                        padding: 10px;
-                        border: 1px solid #967647;
-                        background-color: #212121;
-                      }
-                }
-                input[type="tel"],
+              
+                input[type="text"],
+                      input[type="tel"],
                       input[type="email"],
                       textarea {
                         width: 95%;
-                        height: 3.7vh;
-                        margin-bottom: 1vh; 
-                        padding: 0.6vw;
+                        height: 30px;
+                        margin-bottom: 3%; 
+                        padding: 10px;
                         border: 1px solid #967647;
                         background-color: #212121;
+                        color: whitesmoke;
+                        outline: none;
+                        border-radius: 10px;
                       }
                       button[type="submit"] {
                         background-color: #554934;
                         color: white;
                         border: none;
-                        height: 6.75vh;
+                        height: 45px;
                         margin-top: 2%;
                         cursor: pointer;
                         border: 2px solid #967647;
                         transition: background-color 0.3s ease-in-out;
-                        font-size: 1.6vw;
+                        font-size: 25px;
                         font-family: 'Inter';
                         font-weight: 200;
+                        border-radius: 10px;
                       }
                   
                       textarea {
@@ -171,10 +163,12 @@
                     display: flex;
                     flex-direction: column;
                     input[type="text"]{
-                        width: 91%;
+                        width: 95%;
+                     
                         
                     }
                 }
+                
                 button[type="submit"]{
                     border-radius: 10px;
                     width: 50vw;
