@@ -1,5 +1,7 @@
 <div align='center'>
 <h1>Real Estate Project</h1>
+  <h3>About the project</h3>
+  <p>Harmony Residence, a real estate project, offers an apartment showcase along with a user-friendly mortgage calculator. This feature allows users to explore available living spaces and plan their finances efficiently.</p>
 Live Demo: <a href='https://harmony-real-estate.vercel.app/'>Harmony Demo</a> <br>
 » React JS <br>
 » SCSS
