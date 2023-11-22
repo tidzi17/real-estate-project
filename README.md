@@ -29,7 +29,7 @@ Live Demo: <a href='https://harmony-real-estate.vercel.app/'>Harmony Demo</a> <b
 
 <h3 align='center'>Amenities Page </h3>
 <div align='center'>
-<img src='ppublic/project-screens/amenities.png'/>
+<img src='public/project-screens/amenities.png'/>
 </div>
 
 <h3 align='center'>Contact Page </h3>
