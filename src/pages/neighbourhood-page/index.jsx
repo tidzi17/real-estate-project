@@ -74,8 +74,7 @@ function Neighbourhood(){
             <h2>Embrace the Vibrant Neighborhood</h2>
             <p>Harmony Residence offers a harmonious blend of coastal beauty and urban accessibility, placing convenience at your doorstep. Within a 10-minute walk, discover a plethora of amenities that cater to every aspect of modern living.
 From top-notch schools for young minds to trendy cafes and restaurants serving delectable cuisines, the neighborhood is a culinary haven. Explore fashion-forward boutiques and cultural hotspots, enriching your experience with art, entertainment, and shopping delights.
-For outdoor enthusiasts, nearby parks offer the perfect retreat, providing jogging trails and family gatherings amidst nature's beauty. Embrace a lifestyle where everything you desire is within easy reach, making each day a celebration of harmonious living.
-Welcome to Harmony Residence, where coastal serenity meets urban vibrancy, crafting a neighborhood that resonates with the essence of convenient and delightful living.
+For outdoor enthusiasts, nearby parks offer the perfect retreat, providing jogging trails and family gatherings amidst nature's beauty. 
                       </p>
                 </div>
             </section>

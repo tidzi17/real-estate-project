@@ -2,7 +2,7 @@ import React from "react";
 import '../../styles/main.scss';
 import ScrollDown from "../../components/scrollButoon";
 import building from '../../assets/amenities/bulding.jpg';
-import interior from '../../assets/amenities/interiorbw.jpg';
+import interior from '../../assets/amenities/b&w.png';
 import wedding from '../../assets/amenities/wedding.jpeg';
 import item1 from '../../assets/amenities/icons/home-automation.png';
 import item2 from '../../assets/amenities/icons/cctv-camera.png';

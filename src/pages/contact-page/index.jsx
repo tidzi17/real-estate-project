@@ -33,9 +33,18 @@ function Contact(){
                    </p>
                     </div>
                     <div className="socials">
-                    <p className="contact-list-item"><LuPhone className="icon"/> +598/5659-56</p>
-                    <p className="contact-list-item"><TfiEmail className="icon"/> info@harmony.com</p>
-                    <p className="contact-list-item"><FiMapPin className="icon"/> 21.Jump Street, Miami USA</p>
+                        <div className="contact-list-item">
+                            <i className="icon"><LuPhone/></i>
+                            <span className="text">+598/5659-56</span>
+                        </div>
+                        <div className="contact-list-item">
+                            <i className="icon"><TfiEmail/></i>
+                            <span className="text"> info@harmony.com</span>
+                        </div>
+                        <div className="contact-list-item">
+                            <i className="icon"><FiMapPin/></i>
+                            <span className="text">21.Jump Street, Miami USA</span>
+                        </div>
                     </div>
                 </div>
                 <div className="container-item" id="form">

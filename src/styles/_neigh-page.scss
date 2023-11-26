@@ -82,7 +82,7 @@
     .block-container{
         width: 80vw;
         height: 90vh;
-        margin: 5% auto 0 auto;
+        margin: 2% auto;
         display: flex;
         flex-direction: row;
         gap: 5%;
@@ -107,7 +107,10 @@
             p{
                 
                 margin-top: -2%;
-                line-height: 170%;
+                width: 72%;
+                right: 0;
+                float: right;
+               /*  line-height: 170%; */
                
                 
             }
