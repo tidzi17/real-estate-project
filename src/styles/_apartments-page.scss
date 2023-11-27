@@ -274,3 +274,105 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px){
+    .apartments{
+        .apartments-container{
+            width: 95%;
+            height: 65vh;
+            .apartments-content{
+                .apartments-nav{
+                    .nav{
+                        ul{
+                            font-size: 14px;
+                        }
+                    }
+                    button{
+                        width: 90px;
+                        height: 28px;
+                        font-size: 9px;
+                        border-radius: 8px;
+
+                    }
+                }
+                .apartments-box{
+                    .ap-showoff{
+                        .ap-imgs{
+                            height: 100%;
+                        }
+                        .ap-nav{
+                            button{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .ap-info{
+                        .info-content{
+                            ul li{
+                                margin-left: -25%;
+                            }
+                        }
+                        .buttons{
+                            button{
+                                font-size: 8px;
+                                height: 23px;
+                                width: 75px;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .calculator-container{
+            width: 90%;
+            height: 45vh;
+            .heading{
+                width: 45%;
+                h3{
+                    font-size: 10px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+            }
+            .container{
+                .morgage-container{
+                    .calculator{
+                        padding-top: 0;
+                        .calculator-item{
+                            input{
+                                height: 25px;
+                                font-size: 10px;
+                            }
+                        }
+                        button{
+                            font-size: 10px;
+                            height: 23px;
+                            border-radius: 8px;
+                        }
+                    }
+                    .result{
+                        .result-content{
+                            margin: auto;
+                            h2{
+                                font-size: 15px;
+                            }
+                            .results-cont{
+                                height: auto;
+                                margin: 2% auto;
+                            }
+                            button{
+                                height: 25px;
+                                width: 80px;
+                                font-size: 8px;
+                                border-radius: 8px;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}

@@ -41,6 +41,18 @@ $res-font-styles: (
    
     )
 );
+$smaller-font-styles: (
+    h2: (
+    font-size: 20px
+  ),
+  h3: (
+    font-size: 12px,
+  ),
+  p: (
+    font-size: 12px,
+   
+    )
+);
 
 $mobile-breakpoint: 768px;
 $tablet-breakpoint: 992px;

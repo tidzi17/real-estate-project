@@ -99,7 +99,7 @@
 
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .navigation-container {
       width: 100%;
       height: 12vh;
@@ -115,9 +115,9 @@
         position: absolute;
         margin: 0 ;
         top: 0;
-        left: 40%;
+        left: 45%;
         img{
-            width: 20vw;
+            width: 12vw;
             height: 12vh;
         }
       }
@@ -162,7 +162,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: rgb(240, 240, 240);
+            background-color: rgb(194, 193, 193);
             color: rgb(49, 40, 10);
             font-weight: 500;
             
@@ -176,6 +176,34 @@
         }
       }
     }
+     
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 471px) {
+    .navigation-container {
+        .navbar{
+            .nav-links-mobile{
+                .nav-box{
+                    .nav-item{
+                        padding: 8%;
+                     }
+                }
+            }
+        }
+    
+      .mobile-logo{
+        
+        left: 43%;
+        img{
+            width: 15vw;
+            height: 12vh;
+        }
+      }
+     
+   
      
     }
     

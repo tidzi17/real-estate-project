@@ -66,12 +66,13 @@
   }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
   .landing-container{
-    margin-top: -12vh;
+   
     .heading{
+      margin-top: 10%;
       h1{
-        font-size: 14vw;
+        font-size: 65px;
       }
       
     }
@@ -101,13 +102,27 @@
   h3{
     @include font-style('h3');
     @include responsive-font-style(h3);
+    @include smaller-font-style(h3);
 }
 h2{
     @include font-style('h2');
     @include responsive-font-style(h2);
+    @include smaller-font-style(h2);
 }
 
 p{
     @include font-style('p');
     @include responsive-font-style(p);
+    @include smaller-font-style(p);
+}
+@media only screen and (max-width: 471px){
+  .landing-container{
+   height: 100vh;
+   margin-top: -12vh;
+    .scrolldown{
+      margin-top: 80vh;
+    
+     
+    }
+  }
 }

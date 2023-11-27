@@ -207,7 +207,7 @@ $social-button-transition-time: 0.3s;
                         top: 0;
                         right: 0;
                         height: calc(100% - 2px);
-                        width: 6.2vw;
+                        width: 30%;
                        border: 1px solid #534939;
                         border-radius: 60px;
                         outline: none;
@@ -316,78 +316,147 @@ $social-button-transition-time: 0.3s;
       
         }
     }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     .footer-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 110vh;
-        width: 100%;
-        text-align: center;
-        margin-top: 0;
-       
+        height: 40vh;
         .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 80%;
-            height: 90%;
-            gap: 20px;
-            padding: 20px;
-            p{
-                font-size: 5vw;
-            }
-            .footer-navigation{
-                width: 65%;
-                margin-left: 0;
-
-                p{
-                    margin-left: 0;
-                }
-                .footer-nav{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: fit-content;
-                    .footer-nav-item{
-                        font-size: 4.2vw;
-                        padding-bottom: 10%;
-                    }
-                }
-            }
-            .footer-contact {
-                text-align: left;
-                width: 90%;
-                    p{
-                        margin: 0 auto;
-                    }
-                    .contact-list{
-
-                        .contact-list-item{
-                            font-size: 4.2vw;
-                            padding-bottom: 10%;
+            .subscribe{
+                .container{
+                    .content-sub{
+                        height: 20px;
+                        .subscription{
+                            input{
+                                &::placeholder{
+                                    font-size: 8px;
+                                }
+                            }
+                            button{
+                                font-size: 8px;
+                                span{
+                                    top: -9px;
+                                }
+                            }
                         }
                     }
+                }
                 
             }
-            .footer-logo{
-                margin-top: 0;
-                order: -1;
-                width: fit-content;
-                img {
-                    width: 32vw;
-                    height: 25vh;
-                   
-                  }
             }
-           
+         .copyright{
+            p{
+                font-size: 8px;
+            }
+         }  
             
            
           }
-          
-         
-
     }
     
+    @media only screen and (max-width: 471px){
+        .footer-container{
+            height: 100vh;
+            .footer-content {
+                display: flex;
+                flex-direction: column;
+                height: 90%;
+                width: 80%;
+                align-items: center;
+                justify-content: center;
+                p{
+                    font-size: 20px;
+                }
+                #colum-first{
+                    order: 1;
+                    img{
+                        width: 25vw;
+                    }
+                }
+                .footer-contact{
+                    order: 3;
+                    height: auto;
+                    padding-left: 0;
+                    .content{
+                        text-align: center;
+                        align-items: center;
+                        span{
+                            font-size: 11px;
+                        }
+                        .social-buttons{
+                            width: 80%;
+                            margin-top: 5%;
+                            .social-button{
+                                width: 20px;
+                                height: 17px;
+                                svg{
+                                    width: 50%;
+                                    height: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-navigation{
+                    order: 2;
+                    height: auto;
+                    padding-left: 0;
+                    .content{
+                        .footer-nav{
+                            list-style-type: none;
+                            margin-left: 0;
+                            text-align: center;
+                            .footer-nav-item{
+                                font-size: 11px;
+                                padding-top: 3.5%;
+                            }
+                        }
+                    }
+                }
+                .subscribe{
+                    order: 4;
+                    width: 80%;
+                    margin-top: 5%;
+                    align-items: center;
+                    .content{
+                        margin-top: 0;
+                        margin-left: -10px;
+                        span{
+                            margin-top: -5%;
+                            margin-left: 0;
+                            font-size: 10px;
+                        }
+                    }
+                    .container{
+                        bottom: 0;
+                        top: 40px;
+                        .content-sub{
+                            height: 30px;
+                            .subscription{
+                                input{
+                                    &::placeholder{
+                                        font-size: 10px;
+                                    }
+                                }
+                                button{
+                                    font-size: 10px;
+                                    
+                                    span{
+                                        top: -5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                }
+             .copyright{
+                p{
+                    font-size: 12px;
+                }
+             }  
+                
+               
+              }
+        }
    
-}
+

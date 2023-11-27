@@ -282,3 +282,54 @@
         }
     }
 }
+
+@media only screen and (max-width: 1024px){
+    .neighbourhood{
+        .intro-container{
+            height: 30vh;
+            .text-block {
+               width: 45%;
+                p{
+                    font-size: 12px;
+                    width: 80%;
+                    float: right;
+                    
+                   
+                }
+            }
+        }
+        .features{
+            height: 11vh;
+            p{
+                font-size: 10px;
+            }
+        }
+        .block-container{
+            height: 75vh;
+            #text-block{
+                p{
+                    font-size: 12px;
+                    width: 95%;
+                }
+            }
+            
+        }
+        .cards{
+            height: 30vh;
+            width: 85%;
+            .cards-container{
+                .flip-card{
+                    .flip-card-back{
+                        ul li{
+                            font-size: 10px;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+                
+            }
+            
+           
+        }
+    }
+}

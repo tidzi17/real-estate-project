@@ -16,8 +16,14 @@ function Form() {
                 </p>
                 </div>
                 <div className="contact-links">
-                    <p><LuPhone className="icon"/> +598/5659-56</p>
-                    <p><TfiEmail className="icon"/> info@harmony.com</p>
+                        <div className="contact-list-item">
+                            <i className="icon"><LuPhone/></i>
+                            <span className="text">+598/5659-56</span>
+                        </div>
+                        <div className="contact-list-item">
+                            <i className="icon"><TfiEmail/></i>
+                            <span className="text"> info@harmony.com</span>
+                        </div>
                 </div>
             </div>
             <div className="contact-form-container">

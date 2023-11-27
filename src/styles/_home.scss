@@ -260,7 +260,7 @@ RESPONSIVE */
 }
 }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 769px)  {
     .home{
     .landing-container{
     .heading{
@@ -273,6 +273,9 @@ RESPONSIVE */
 .intro-container{
     margin: 0 auto 5% auto;
     height: 100vh;
+    .intro-container-links{
+        height: 50%;
+    }
 }
 .overview-container{
     height: 55vh;
@@ -386,128 +389,157 @@ RESPONSIVE */
 }
     }}
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .home{
     .landing-container{
         width: 100%;
-        height: 100vh;
+       
     .heading{
-        width: 100%;
+       
         p{
-            font-size: 8.8vw;
+            font-size: 50px;
         }
 
-        .heading-text{
-            
-            .top-items{
-                p{
-                    font-size: 4vw;
-                }
-                .icon{
-                    padding-right: 5px;
-                    font-size: 3.7vw;
-                }
-                
-            }
-        }
     }
 }
 .intro-container{
     margin: 0 auto;
     margin-top: 0;
     padding: 0;
-    width: 95vw;
-    height: 130vh;
- /*    border: 1px solid red; */
+    width: 80vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     .intro-container-text{
-        width: 100%;
-        height: 20%;
-        margin-top: -35%;
+        height: auto;
         padding: 0;
-      /*   border: 1px solid red; */
         text-align: center;
-       h3{
-        width: 100%;
-        font-size: 5vw;
-       }
-       h2{
-        font-size: 5.4vw;
-       }
-       p{
-        font-size: 3vw;
-       }
+        width: 90%;
+        
     }
     .intro-container-links{
-        width: 100%;
-        margin-top: 2%;
-       /*  border: 1px solid red; */
+        width: 95%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         gap: 3%;
+        margin-top: 2%;
         .intro-item{
             width: 100%;
-            height: 30vh;
+            height: 20vh;
+            margin-bottom: 2%;
+           
             h3{
                 margin-top: -2%;
-                font-size: 4vw;
+                font-size: 20px;
             }
             h4{
-                font-size: 2vw;
+                font-size: 10px;
             }
         }
     }
 }
 .overview-container{
      width: 85%;
-     height: 63vh;
+     height: 77vh;
      margin: 5% auto;
      display: flex;
      flex-direction: column;
      align-items: center;
      gap: 0%;
      #image{
-        width: 60%;
+        width: 50%;
         order: 1;
+        margin-top: 2%;
      }
      #text-block{
         text-align: center;
         border-right: none;
         border-bottom: none;
+        height: auto;
+        padding: 0;
        h3{
         margin: 0;
-        font-size: 4vw;
+        
        }
        h2{
         margin: 0;
-        font-size: 5vw;
+        
        }
        p{
         margin: 0;
-        line-height: 150%;
-        font-size: 3.2vw;
+       
        }
       
     }
      
  }
+ .parallax-section{
+    height: 50vh;
+    h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 10px;
+    }
+    button{
+        font-size: 8px;
+        width: 10vw;
+        height: 22px;
+    }
+ }
+ .offer-section{
+    height: 55vh;
+    .offer-container{
+        .offer-info{
+            .info-content{
+                ul{
+                    li{
+                        margin-left: -30%;
+                    }
+                }
+               p{
+                width: 80%;
+                font-size: 10px;
+               }
+               .buttons{
+                button{
+                    font-size: 8px;
+                    height: 23px;
+                    width: 75px;
+                    border-radius: 8px;
+                }
+            }
+            }
+        }
+      .offer-content{
+        .offer-content-nav{
+            button{
+                font-size: 12px;
+            }
+        }
+      }
+    }
+ }
+ .form-section{
+   height: 95vh;
+ }
  .map-section{
     width: 100%;
-    height: 40vh;
-    margin: 5% auto;
+    height: 50vh;
+    margin: 0;
+    .map{
+        height: 100%;
+    }
     .map-headings{
-        width: 100%;
         h3{
             margin-top: -3%;
-            font-size: 2.5vw;
+            
         }
-        h2{
-            font-size: 4vw;
-        }
+      
     }
    
 
@@ -515,4 +547,92 @@ RESPONSIVE */
  }
 }
 
+}
+
+@media only screen and (max-width: 471px) {
+    .home{
+        .landing-container{
+           height: 100vh;
+           margin-top: -12vh;
+           
+        .heading{
+           
+            p{
+                font-size: 40px;
+            }
+            .top-items{
+                .icon{
+                    font-size: 12px;
+                   /*  padding-left: 20px;
+                    padding-right: 20px; */
+                }
+                p{
+                    font-size: 10px;
+                    /* padding-right: 10px; */
+                }
+            }
+    
+        }
+    }
+    .parallax-section{
+       height: 40vh;
+        button{
+            font-size: 8px;
+            width: 15vw;
+            height: 22px;
+        }
+     }
+     .countup-section{
+        height: 60vh;
+     }
+     .offer-section{
+        height: 80vh;
+        width: 100%;
+        .offer-container{
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            .offer-content{
+                width: 80%;
+                .offer-content-nav{
+                    height: auto;
+                }
+            }
+            .offer-info{
+                width: 80%;
+                height: auto;
+                .info-content{
+                    margin-left: 0;
+                    h3{
+                        font-size: 14px;
+                    }
+                    ul{
+                        width: 90%;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        height: 30%;
+                        padding-top: 2%;
+                        li{
+                            margin-left: -25%;
+                            font-size: 11px;
+                        }
+                    }
+                    p{
+                        width: 90%;
+                        font-size: 11px;
+                    }
+                }
+                
+            }
+        }
+     }
+     .form-section{
+        height: 90vh;
+        margin-top: 15%;
+     }
+     .map-section{
+        height: 35vh;
+     }
+    
+}
 }

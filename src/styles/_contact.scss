@@ -234,66 +234,63 @@
         }
     }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     .contact{
         .contact-info-container{
             width: 100%;
-            height: 120vh;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            padding-top: 10vh;
             gap: 0;
             .container-item{
                 height: 50%;
                 align-items: center;
             }
-            #map{
-                width: 100%;
-                height: 20vh;
-            }
             #info{
                 width: 90%;
                 height: fit-content;
-                margin-top: -40%;
-
+                margin-top: -10%;
                 .text-block{
                     align-items: center;
                     text-align: center;
-                    margin-top: 6.25vh;
+                  
                     h3{
-                       /*  margin-top: -0.5%; */
-                        font-size: 2.6vw;
+                     
+                        font-size: 10px;
+                        margin-bottom: 2%;
                     }
                     h2{
                         /* margin-top: -2.5%; */
-                        font-size: 5.2vw;
+                        font-size: 25px;
                     }
                     p{
-                        width: 100%;
-                        font-size: 4vw;
-                        margin-top: -2%;
+                        width: 80%;
+                        font-size: 13px;
+                        margin: 0 auto;
                     }
                 }
                 .socials{
                     height: fit-content;
-                    margin-top: 3vh;
-                    width: 100%;
+                    margin: 4% auto 0 auto;
+                    width: fit-content;
                     /* align-items: center; */
-                    .icon{
-                        font-size: 2.9vw;
-                        /* margin-right: 2%;
-                        padding-top: 2%; */
-                        
+                    .contact-list-item{
+                        .icon{
+                            font-size: 13px;
+                            
+                            
+                        }
+                        .text{
+                            font-size: 12px;
+                           
+                        }
                     }
-                    p{
-                        font-size: 3vw;
-                       /*  margin-top: -4%; */
-                    }
+                   
                 }
             }
             #form{
-                width: 80%;
-                height: 60%;
+                width: 50%;
+                height: 50%;
                 margin-top: 0;
                 display: flex;
                 flex-direction: column;
@@ -322,10 +319,10 @@
                             }
                             button[type="submit"]{
                                 border-radius: 10px;
-                                width: 50vw;
-                                height: 4.5vh;
+                                width: 50%;
+                                height: 28px;
                                 margin: 2% auto;
-                                font-size: 4vw;
+                                font-size: 10px;
                             }
                             textarea{
                                 height: 20vh;
@@ -336,10 +333,64 @@
                 }
             }
         }
+        .follow-us-container{
+            height: 40vh;
+            .text-block{
+                margin-top: 3%;
+                h3{
+                    font-size: 10px;
+                }
+                h2{
+                    font-size: 22px;
+                }
+            }
+           
+            .links-container{
+                height: 50%;
+                width: 95%;
+            }
+        }
       .map-container{
-        width: 100%;
-        height: 27vh;
+        
+        height: 35vh;
         
       } 
     }
+}
+
+@media only screen and (max-width: 471px){
+    .contact{
+        .contact-info-container{
+            #info{
+                .socials{
+                    margin-top: 8%;
+                }
+            }
+            #form{
+                width: 80%;
+            }
+        }
+        .map-container{
+            height: 37vh;
+            .map{
+                height: 100%;
+            }
+        }
+        .follow-us-container{
+            height: 60vh;
+            .links-container{
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+               grid-template-rows: repeat(2, 1fr);
+               height: 70%;
+               margin: 0 auto;
+               padding-left: 2.5%;
+               .item{
+                width: 90%;
+                height: 90%;
+               }
+            }
+        }
+    }
+ 
 }

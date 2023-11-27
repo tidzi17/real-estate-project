@@ -6,7 +6,7 @@ import '../styles/main.scss';
 const Counter = () => {
   const [couterOn, setCounterOn] = useState(false);
   return (
-    <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+    <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} className="count">
     <div className='counter-container'>
       {/* <div className='counter-content'> */}
         <div className='counter-item'>

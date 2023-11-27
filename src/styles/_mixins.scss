@@ -19,6 +19,20 @@
     font-size: map-get($responsive-style-map, font-size);
   }
 }
+@mixin smaller-font-style($style) {
+  $style-map: map-get($font-styles, $style);
+  $smaller-style-map: map-get($smaller-font-styles, $style);
+
+  color: map-get($style-map, color);
+  font-family: map-get($style-map, font-family);
+  font-weight: map-get($style-map, font-weight);
+  text-transform: map-get($style-map, text-transform);
+
+  @media screen and (max-width: 768px) {
+    font-size: map-get($smaller-style-map, font-size);
+  }
+}
+
 
   @mixin bg-rules{
     background-repeat: no-repeat;
