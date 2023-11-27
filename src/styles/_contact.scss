@@ -174,6 +174,66 @@
         }
     }
 }
+@media only screen and (max-width: 1440px){
+    .contact{
+        .contact-info-container{
+            height: 55vh;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            #form{
+                width: 30%;
+            }
+            #info{
+                width: 40%;
+            }
+        }
+        .follow-us-container{
+            height: 60vh;
+        }
+    }
+}
+@media only screen and (max-width: 1024px){
+    .contact{
+        .contact-info-container{
+            #info{
+                .text-block{
+                    p{
+                        font-size: 15px;
+                    }
+                }
+                .socials{
+                    .contact-list-item{
+                        .icon{
+                            font-size: 18px;
+                        }
+                        .text{
+                            font-size: 16px;
+                        }
+                    }
+                 
+                }
+            }
+            #form{
+                input{
+                    &::placeholder{
+                        font-size: 10px;
+                    }
+                }
+                textarea{
+                    &::placeholder{
+                        font-size: 10px;
+                    }
+                }
+                button{
+                    font-size: 15px;
+                }
+            }
+        }
+        .follow-us-container{
+            height: 55vh;
+        }
+    }
+}
 @media only screen and (max-width: 767px){
     .contact{
         .contact-info-container{

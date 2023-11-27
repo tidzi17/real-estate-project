@@ -201,3 +201,84 @@
         }
     }
 }
+@media only screen and (max-width: 1440px){
+    .neighbourhood{
+        .intro-container{
+            .text-block {
+                height: 90%;
+                p{
+                    font-size: 23px;
+                    line-height: 140%;
+                   
+                }
+            }
+        }
+        .features{
+            height: 22vh;
+            p{
+                font-size: 23px;
+            }
+        }
+        .block-container{
+            height: 80vh;
+            
+            #text-block{
+                p{
+                    width: 90%;
+                }
+            }
+            
+        }
+        .cards{
+            width: 96%;
+            height: 50vh;
+        }
+    }
+  
+}
+@media only screen and (max-width: 1024px){
+    .neighbourhood{
+        .intro-container{
+            height: 55vh;
+            .text-block {
+               width: 45%;
+                p{
+                    font-size: 16px;
+                    width: 80%;
+                    float: right;
+                    
+                   
+                }
+            }
+        }
+        .features{
+            height: 16vh;
+            p{
+                font-size: 14px;
+            }
+        }
+        .block-container{
+            height: 65vh;
+            p{
+                font-size: 14px;
+            }
+        }
+        .cards{
+            height: 40vh;
+            width: 85%;
+            .cards-container{
+                .flip-card{
+                    .flip-card-back{
+                        ul li{
+                            font-size: 15px;
+                            padding-bottom: 3px;
+                        }
+                    }
+                }
+                
+            }
+            
+           
+        }
+    }
+}

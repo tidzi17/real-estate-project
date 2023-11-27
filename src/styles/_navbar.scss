@@ -69,6 +69,35 @@
         display: none;
     }
 }
+@media only screen and (max-width: 1440px){
+    .navigation-container{
+        .navbar{
+            img{
+                height: 18vh;
+            }
+        }
+    }
+  
+
+}
+@media only screen and (max-width: 1024px){
+    .navigation-container{
+       height: auto;
+       .navbar{
+        img{
+            height: 15vh;
+            width: 10vw;
+        }
+        .nav-links{
+            .nav-box{
+                margin-top: 3%;
+            }
+        }
+    }
+    }
+  
+
+}
 
 @media only screen and (max-width: 767px) {
     .navigation-container {

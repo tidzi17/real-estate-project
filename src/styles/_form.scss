@@ -1,7 +1,6 @@
 .form-container{
-    margin: 5% auto;
     width: 100%;
-    height: 75vh;
+    height: 100%;
     background-color: #212121;
     display: flex;
     align-items: center;
@@ -67,6 +66,7 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                height: 100%;
               
                 input[type="text"],
                       input[type="tel"],
@@ -106,6 +106,21 @@
         }
     }
    
+}
+@media only screen and (max-width: 1440px) {
+    .form-container{
+        .container-content{
+            width: 85%;
+            height: 75%;
+            .contact-block{
+                .contact-links{
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 767px){

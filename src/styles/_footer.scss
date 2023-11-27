@@ -215,7 +215,7 @@ $social-button-transition-time: 0.3s;
                         padding: 1%;
                         cursor: pointer;
                         background-color: #1f1e1e;
-                        color: #FFFFFF;
+                        color: #b1adad;
                         transition: width 0.35s ease-in-out, background-color 0.35s ease-in-out;
 
                         .before-submit,
@@ -253,7 +253,69 @@ $social-button-transition-time: 0.3s;
         }
     }  
                    
-
+    @media only screen and (max-width: 1440px){
+        .footer-container{
+            height: 50vh;
+            .footer-content{
+                height: 60%;
+                .footer-logo{
+                    height: auto;
+                    img{
+                        height: 95%;
+                    }
+                }
+                .subscribe{
+                    .container{
+                        .subscription{
+                            button{
+                                font-size: 13px;
+                                .before-submit{
+                                    line-height: 37px;
+                                }
+                                .after-submit{
+                                    line-height: 37px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright{
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1024px){
+        .footer-container{
+            .footer-content{
+                .subscribe{
+                    .container{
+                        .content-sub{
+                            height: 25px;
+                            .subscription{
+                                input{
+                                    &::placeholder{
+                                        font-size: 10px;
+                                    }
+                                }
+                                button{
+                                    font-size: 10px;
+                                    span{
+                                        top: -7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            
+            }
+      
+        }
+    }
 @media only screen and (max-width: 767px){
     .footer-container{
         display: flex;

@@ -23,6 +23,49 @@
     @include heading-rules;
   }
 }
+
+
+@media only screen and (max-width: 1440px){
+  .landing-container{
+    .heading{
+      h1{
+        font-size: 100px;
+      }
+    
+      
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .landing-container{
+    height: 80vh;
+    .heading{
+      h1{
+        font-size: 75px;
+      }
+    }
+    .scrolldown{
+      --sizeX: 23px;
+      --sizeY: 35px;
+      border: calc(var(--sizeX) /12) solid var(--color);
+      margin-top: 59vh;
+      &::before{
+        bottom: 21px;
+        width: 5px;
+      }
+      .chevrons{
+        margin-top: 35px;
+        margin-left: -5px;
+        .chevrondown{
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 767px){
   .landing-container{
     margin-top: -12vh;
@@ -56,12 +99,15 @@
   }
   
   h3{
-    @include font-style('h3')
+    @include font-style('h3');
+    @include responsive-font-style(h3);
 }
 h2{
-    @include font-style('h2')
+    @include font-style('h2');
+    @include responsive-font-style(h2);
 }
 
 p{
-    @include font-style('p')
+    @include font-style('p');
+    @include responsive-font-style(p);
 }

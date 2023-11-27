@@ -6,6 +6,19 @@
   font-weight: map-get($style-map, font-weight );
   text-transform: map-get($style-map, text-transform);
 }
+@mixin responsive-font-style($style) {
+  $style-map: map-get($font-styles, $style);
+  $responsive-style-map: map-get($res-font-styles, $style);
+
+  color: map-get($style-map, color);
+  font-family: map-get($style-map, font-family);
+  font-weight: map-get($style-map, font-weight);
+  text-transform: map-get($style-map, text-transform);
+
+  @media screen and (max-width: 1024px) {
+    font-size: map-get($responsive-style-map, font-size);
+  }
+}
 
   @mixin bg-rules{
     background-repeat: no-repeat;

@@ -30,9 +30,7 @@ function Neighbourhood(){
                  coastal haven invites you to experience a life where dreams
                   meet the sea. Wake up to breathtaking sunrises, savor 
                   leisurely walks along sandy shores, and embrace a tranquil 
-                  existence that nurtures your soul. Nestled in Miami's vibrant
-                   neighborhood, this coastal retreat offers a harmonious blend
-                    of urban conveniences and the raw beauty of nature.</p>
+                  existence that nurtures your soul. </p>
                     </div>
             </section>
           <section className="features">

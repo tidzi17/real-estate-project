@@ -43,7 +43,6 @@
     .design-container{
         width: 100%;
         height: 75vh;
-        background-color: rgb(203, 189, 170);
         margin: 5% auto;
         @include bg-rules;
         display: flex;
@@ -199,6 +198,53 @@
                 grid-area: c;
                 @include bg-rules; 
                
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    .amenities{
+        .smarthouse-container{
+            height: 60vh;
+            .icons-box{
+                height: 22%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px){
+    .amenities{
+        .intro-container{
+            height: 55vh;
+        }
+        .design-container{
+            height: 55vh;
+        }
+        .community-container{
+            height: 55vh;
+            margin: 8% auto;
+        }
+        .smarthouse-container{
+            height: 55vh;
+            .icons-box{
+                height: 20%;
+             
+                .icons-item{
+                    border-radius: 20px;
+                   .icon{
+                    height: 60%;
+                    width: 55%;
+                   }
+                }
+            }
+        }
+        .roof-container{
+            width: 80%;
+            height: 80vh;
+            p{
+                width: 80%;
+                margin-bottom: 7px;
             }
         }
     }

@@ -5,7 +5,6 @@
 }
 
 $font-styles: (
-
     heading:(
     font-size: 130px,
     color: #FFFFFF,
@@ -29,6 +28,20 @@ $font-styles: (
     font-family: 'Gudea', 
     )
 );
+
+$res-font-styles: (
+    h2: (
+    font-size: 30px
+  ),
+  h3: (
+    font-size: 20px,
+  ),
+  p: (
+    font-size: 16px,
+   
+    )
+);
+
 $mobile-breakpoint: 768px;
 $tablet-breakpoint: 992px;
 

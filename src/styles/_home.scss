@@ -161,6 +161,15 @@
       
     }
 }
+.parallax-section{
+    width: 100%;
+    height: 85vh;
+    margin: 3% auto;
+}
+.form-section{
+    width: 100%;
+    height: 75vh;
+}
 
 .map-section{
     width: 100%;
@@ -215,6 +224,168 @@
 
 /* 
 RESPONSIVE */
+
+@media only screen and (max-width: 1440px) {
+    .home{
+    .landing-container{
+    .heading{
+        
+        p{
+            font-size: 90px;
+        }
+    }
+}
+.overview-container{
+    height: 65vh;
+    #text-block{
+        p{
+            line-height: 140%;
+        }
+    }
+   
+}
+.parallax-section{
+    height: 65vh;
+    button{
+        width: 18vw;
+        height: 48px;
+    }
+}
+.form-section{
+    height: 65vh;
+}
+.map-section{
+    height: 65vh;
+    margin-top: 5%;
+}
+}
+}
+@media only screen and (max-width: 1024px) {
+    .home{
+    .landing-container{
+    .heading{
+        p{
+            font-size: 70px;
+        }
+    }
+}
+    
+.intro-container{
+    margin: 0 auto 5% auto;
+    height: 100vh;
+}
+.overview-container{
+    height: 55vh;
+    gap: 10%;
+    p{
+        font-size: 15px;
+    }
+}
+.parallax-section{
+    height: 60vh;
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px;
+    }
+    button{
+        width: 16vw;
+        height: 38px;
+    }
+}
+.offer-section{
+    height: 70vh;
+    margin: 5% auto;
+    .offer-heading{
+        height: auto;
+    }
+    .offer-container{
+        height: 75%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .offer-info{
+            margin-top: -3%;
+            .info-content{
+                ul{
+                    li{
+                        margin-left: -20%;
+                    }
+                }
+                p{
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 1;
+                }
+                .buttons{
+                    button{
+                        font-size: 10px;
+                        height: 30px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        .offer-content{
+            .arrow{
+                width: 35px;
+                height: 30px;
+            }
+            .arrow-icon{
+                font-size: 18px;
+            }
+        .offer-content-nav{
+            button{
+                font-size: 17px;
+                padding-top: 5%;
+            }
+        }
+        }
+    }
+   
+}
+.form-section{
+    height: 60vh;
+    .form-container{
+        .container-content{
+            height: 85%;
+            .contact-block{
+            .contact-links{
+                p{
+                    font-size: 15px;
+                }
+            }
+            }
+         .contact-form-container{
+            width: 35%;
+            input{
+                height: 10px;
+                &::placeholder{
+                    font-size: 10px;
+                }
+            }
+            textarea{
+                &::placeholder{
+                    font-size: 10px;
+                }
+            }
+            button{
+                height: 30px;
+                font-size: 18px;
+            }
+         }
+        }
+
+    }
+}
+.map-section{
+    height: 60vh;
+    margin-top: 2%;
+}
+    }}
+
 @media only screen and (max-width: 767px) {
     .home{
     .landing-container{

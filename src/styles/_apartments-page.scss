@@ -196,3 +196,81 @@
         }
     }
 }
+
+@media only screen and (max-width: 1024px){
+    .apartments{
+        .apartments-container{
+            width: 90%;
+            height: 85vh;
+            .apartments-content{
+                .apartments-nav{
+                    .nav{
+                        ul{
+                            font-size: 20px;
+                        }
+                    }
+                    button{
+                        width: 150px;
+                        height: 35px;
+                        font-size: 13px;
+                    }
+                }
+                .apartments-box{
+                    .ap-showoff{
+                        .ap-nav{
+                            button{
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                    .ap-info{
+                        .info-content{
+                            ul li{
+                                margin-left: -20%;
+                            }
+                        }
+                        .buttons{
+                            button{
+                                font-size: 10px;
+                                height: 30px;
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .calculator-container{
+            width: 90%;
+            .heading{
+                width: 45%;
+                h3{
+                    font-size: 14px;
+                }
+                h2{
+                    font-size: 27px;
+                }
+            }
+            .container{
+                .morgage-container{
+                    .calculator{
+                        button{
+                            font-size: 17px;
+                            height: 35px;
+                        }
+                    }
+                    .result{
+                        .result-content{
+                            button{
+                                height: 37px;
+                                width: 13vw;
+                                font-size: 14px;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}
