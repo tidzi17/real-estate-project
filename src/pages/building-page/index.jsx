@@ -1,8 +1,6 @@
 import React from "react";
 import '../../styles/main.scss';
 import ScrollDown from "../../components/scrollButoon";
-import { Parallax } from 'react-parallax';
-import bgImage from '../../assets/building/parallax.png';
 import designersBg from '../../assets/building/designers.png';
 import archBg from '../../assets/building/architect.jpg';
 
@@ -54,16 +52,7 @@ function Building(){
             </div>
             </div>
             </section>
-            {/* <section className="parallax">
-            <Parallax className="parallax-container"
-        bgImage={bgImage} 
-        strength={300}
-      >
-        <div>
-          <h2>A Smart Living Experience</h2>
-        </div>
-      </Parallax>
-            </section> */}
+            
            
         </div>
     )

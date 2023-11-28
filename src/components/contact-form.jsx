@@ -14,7 +14,6 @@ const onSubmit = async (values, actions) => {
 const Form = () => {
 
     const [isSubmitted, setIsSubmitted] = useState(false);
-    const [submittedValues, setSubmittedValues] = useState(null);
     const messageBoxRef = useRef(null);
 
     const {values, errors, touched, isSubmitting, handleBlur, handleChange, handleSubmit} = useFormik({
@@ -27,7 +26,6 @@ const Form = () => {
     },
         validationSchema: formSchema,
         onSubmit: (formValues, actions) => {
-            setSubmittedValues(formValues);
             onSubmit(formValues, actions);
             setIsSubmitted(true);
         },

@@ -24,15 +24,6 @@ export default function ApartmentsGallery(){
       setActiveContent('video');
     };
 
-    const settings = {
-        showThumbs: false,
-        controlDots: false,
-        infiniteLoop: true,
-        showStatus: false,
-        autoPlay: true,
-        interval: 5000, 
-      };
-
     const apartmentsData = data.apartments;
 
 

@@ -8,10 +8,10 @@ function ScrollDown(){
       };
 
     return(
-        <div class='scrolldown' onClick={handleScroll}>
-                <div class="chevrons">
-               <div class='chevrondown'></div>
-              <div class='chevrondown'></div>
+        <div className='scrolldown' onClick={handleScroll}>
+                <div className="chevrons">
+               <div className='chevrondown'></div>
+              <div className='chevrondown'></div>
                 </div>
               </div>
     )

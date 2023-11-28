@@ -3,9 +3,7 @@ import { useNavigate } from "react-router-dom";
 import logo from '../assets/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import {LuPhone} from 'react-icons/lu';
-import {TfiEmail} from 'react-icons/tfi';
-import {FiMapPin} from 'react-icons/fi';
+
 
 function Footer(){
     const navigate = useNavigate();
@@ -27,18 +25,18 @@ function Footer(){
                 <span><span style={{fontWeight:"bold"}}>Phone:</span> +598/5659-56</span>
                 <span><span style={{fontWeight:"bold"}}>Email:</span> info@harmony.com</span>
                 <div className="social-buttons">
-      <a href="#" className="social-button social-button--facebook" aria-label="Facebook">
+      <div className="social-button social-button--facebook" aria-label="Facebook">
         <FontAwesomeIcon icon={faFacebookF} />
-      </a>
-      <a href="#" className="social-button social-button--instagram" aria-label="Instagram">
+      </div>
+      <div className="social-button social-button--instagram" aria-label="Instagram">
         <FontAwesomeIcon icon={faInstagram} />
-      </a>
-      <a href="#" className="social-button social-button--twitter" aria-label="Twitter">
+      </div>
+      <div className="social-button social-button--twitter" aria-label="Twitter">
         <FontAwesomeIcon icon={faTwitter} />
-      </a>
-      <a href="#" className="social-button social-button--youtube" aria-label="Youtube">
+      </div>
+      <div className="social-button social-button--youtube" aria-label="Youtube">
         <FontAwesomeIcon icon={faYoutube} />
-      </a>
+      </div>
                 </div>
                 </div>
             </div>

@@ -67,10 +67,10 @@ function Amenities(){
                     <h2>Exceptional Living Experience</h2>
                     <p>Immerse yourself in the refreshing waters of our rooftop pool, unwind in the serene spa, or indulge in the pleasure of our state-of-the-art fitness center. Our 24/7 concierge service ensures that your every need is met with utmost care and attention.</p>
                 </div>
-                <div class="container-items">
-                <div class="item item-first" style={{ backgroundImage: `url(${gym})` }}></div>
-                <div class="item item-second" style={{ backgroundImage: `url(${rooftop})` }}></div>
-                <div class="item item-third" style={{ backgroundImage: `url(${pool})` }}></div>
+                <div className="container-items">
+                <div className="item item-first" style={{ backgroundImage: `url(${gym})` }}></div>
+                <div className="item item-second" style={{ backgroundImage: `url(${rooftop})` }}></div>
+                <div className="item item-third" style={{ backgroundImage: `url(${pool})` }}></div>
             </div>
             </section>
         </div>

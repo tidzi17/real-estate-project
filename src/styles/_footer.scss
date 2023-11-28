@@ -52,6 +52,7 @@ $social-button-transition-time: 0.3s;
                         background: $social-button-background;
                         text-align: center;
                         color: #534939;
+                        cursor: pointer;
                       
                         &::after {
                           content: '';
@@ -387,6 +388,7 @@ $social-button-transition-time: 0.3s;
                             .social-button{
                                 width: 20px;
                                 height: 20px;
+                                
                                 svg{
                                     width: 50%;
                                     height: 50%;

@@ -1,7 +1,6 @@
 import React from "react";
 import '../../styles/main.scss';
 import ScrollDown from "../../components/scrollButoon";
-import { Parallax } from 'react-parallax';
 import card1bg from '../../assets/neigh/card-edu.jpeg';
 import card2bg from '../../assets/neigh/card-caffe.webp';
 import card3bg from '../../assets/neigh/card-muse.jpeg';
@@ -123,15 +122,3 @@ For outdoor enthusiasts, nearby parks offer the perfect retreat, providing joggi
 }
 
 export default Neighbourhood;
-
-
-  {/* <section className="parallax">
-            <Parallax className="parallax-container"
-        bgImage={bgImage} 
-        strength={300}
-      >
-        <div>
-          <h2>Wake up to breathtaking sunrises</h2>
-        </div>
-      </Parallax>
-            </section> */}
