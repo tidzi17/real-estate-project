@@ -376,3 +376,137 @@
         }
     }
 }
+
+@media only screen and (max-width: 471px){
+    .apartments{
+        .apartments-container{
+            height: 85vh;
+            .apartments-content{
+                .apartments-nav{
+                    height: auto;
+                        .nav{
+                            ul{
+                                font-size: 10px;
+                            }
+                        }
+                        button{
+                            width: 60px;
+                            height: 20px;
+                            font-size: 7px;
+                            border-radius: 5px;
+                           
+                    }
+                }
+                .apartments-box{
+                    height: auto;
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0;
+                    margin-top: 5%;
+                    .ap-showoff{
+                        width: 90%;
+                        height: 240px;
+                        .arrow{
+                            width: 22px;
+                            height: 22px;
+                        }
+                        .arrow-icon{
+                            font-size: 11px;
+                        }
+                        .ap-nav{
+                            height: auto;
+                            width: 80%;
+                            button{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .ap-info{
+                        width: 90%;
+                        margin-top: 5%;
+                        .info-content{
+                            margin-left: 0;
+                            h3{
+                                font-size: 14px;
+                            }
+                            ul{
+                                width: 90%;
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                height: 50px;
+                                padding-top: 2%;
+                                li{
+                                    margin-left: -25%;
+                                    font-size: 11px;
+                                }
+                            }
+                            p{
+                                width: 90%;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .calculator-container{
+            height: 80vh;
+            margin-top: 5%;
+            padding-top: 5%;
+            .heading{
+                width: 100%;
+                height: fit-content;
+                h3{
+                    font-size: 10px;
+                }
+                h2{
+                    font-size: 15px;
+                    margin-bottom: 5%;
+                }
+            }
+            .container{
+                .morgage-container{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .calculator{
+                        height: fit-content;
+                        margin-bottom: 2%;
+                        padding-top: 0;
+                        .calculator-item{
+                            label{
+                                font-size: 10px;
+                            }
+                            input{
+                                height: 18px;
+                                width: 60%;
+                            }
+                        }
+                        button{
+                            width: 100px;
+                        }
+
+                    }
+                    .result{
+                        height: 170px;
+                        padding: 2%;
+                        .result-content{
+                            .results-cont{
+                                .results{
+                                    p{
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            button{
+                                width: 70px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
